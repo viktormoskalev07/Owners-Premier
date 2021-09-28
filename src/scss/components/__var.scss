@@ -1,11 +1,26 @@
- 
-$logowidth:50px;
- 
+$colorWhite: #fff;
+$colorBeigeLight: #ede6d9;
+$colorBeigeDark: #a48242;
+$colorText: #10312b;
+
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px; 
+
+$fontSize: 20px;
+
+$fontW100: 100;
+$fontW300: 300;
+$fontW600: 600;
+
+$fontHead: 'Stanley';
+$fontBook: 'FuturaBook';
+$fontHeavy: 'FuturaHeavy';
+
+$uppercase: uppercase;
+
 @mixin sm {
   @media (min-width:$sm) {
     @content

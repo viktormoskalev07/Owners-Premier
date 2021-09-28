@@ -1,26 +1,24 @@
-$main-button:green;
-$main-button-hover:rgb(9, 65, 9);
- button{
-   cursor: pointer;
- }
-.button{
-    width: 100%;
-    display: inline-block;
-    padding:10px 25px;
-    background-color: $main-button;
-    border:solid $main-button;
-    font-size: 24px;
-    color:white;
-    border-radius: 4px;
-      cursor: pointer;
+button{
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.btn{
+  &-login{
+    color: $colorBeigeDark;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: $uppercase;
+    font-weight: $fontW100;
+    span{
+      display: block;
+      margin-left: 10px;
+    }
+    img{
+      width: 27px;
+    }
   }
-  
-  .button:hover{
-    color:green;
-    background-color: white;
-  }
-  
-  
- 
-
-
+}

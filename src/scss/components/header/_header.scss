@@ -1,27 +1,13 @@
 header{
     padding: 20px 0;
     flex: 0 0 auto;
+    position: relative;
+    background-color: $colorWhite;
 }
 .logo-header{
     width: 100%;
     max-width: 185px;
-    order: 2;
-    @include xl {
-        order: 1
-    }
 }
 .navbar-toggler{
-    order: 3;
     @include xl {display: none;}
-}
-.btn-login{
-    order: 1;
-    @include xl {
-        order: 3
-    }
-}
-#navbarHeader{
-    @include xl {
-        order: 2
-    }
 }

@@ -5,20 +5,68 @@ button{
   padding: 0;
   margin: 0;
   background: none;
+  box-shadow: none;
+  &:hover, &:focus{
+    box-shadow: none!important;
+    outline: none;
+    border: 0;
+    margin: 0;
+  }
 }
 .btn{
   &-login{
     color: $colorBeigeDark;
-    font-size: 16px;
+    font-size: $font16;
     line-height: 1;
     text-transform: $uppercase;
     font-weight: $fontW100;
-    span{
+    @include sm {font-size: $font20;}
+    @include xl {
+      padding: 10px 0 0 10px;
+      font-size: $font16;
+    }
+    &>span{
       display: block;
       margin-left: 10px;
     }
     img{
-      width: 27px;
+      width: 25px;
+      transition: 0.3s linear;
+      @include sm {width: 52px;}
+      @include xl {width: 27px;}
+    }
+    &:hover{
+      img{
+        transform: rotate(15deg);
+      }
+    }
+    
+  }
+}
+.button{
+  font-size: $font24;
+  font-family: $fontHeavy;
+  line-height: 1;
+  padding: 25px;
+  background-color: $colorBeigeDark;
+  color: $colorWhite;
+  border-radius: 0;
+  text-transform: $uppercase;
+  transition: .3s linear;
+  @include xl {
+    padding: 16px 18px;
+    font-size: $font16;
+  }
+  &:hover{
+    background-color: $colorWhite;
+    color: $colorBeigeDark;
+  }
+  &-invert{
+    background-color: $colorWhite;
+    color: $colorBeigeDark;
+    &:hover{
+      background-color: $colorBeigeDark;
+      color: $colorWhite;
     }
   }
 }

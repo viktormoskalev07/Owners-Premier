@@ -5,16 +5,7 @@ const header = document.querySelector(".header");
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  pagescroll();
+  @@include('slider-init.js')
 });
 
-@@include('modules/nav.js') 
-@@include('modules/fixed-header.js')
-
 @@include('lazyscripts.js')
-@@include('modules/accordion.js')
-
- 
-
-
-

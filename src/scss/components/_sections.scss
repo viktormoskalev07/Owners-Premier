@@ -1,1 +1,76 @@
- 
+.social-link{
+    color: $colorBeigeDark;
+    transition: .3s linear;
+    svg{
+        fill: $colorBeigeDark;
+    }
+    &:hover{
+        color: $colorText;
+        svg{fill:$colorText}
+    }
+}
+.hero{
+    position: relative;
+    &-bottom{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: -260px;
+        @include xl {
+            justify-content: flex-end;
+            flex-direction: row;
+            margin-top: 0;
+        }
+    }
+    &-left{
+        width: 100%;
+        max-width: 568px;
+        padding: 60px 65px 68px 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include xl {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 60px 65px 75px 38px;
+        }
+    }
+    &-right{
+        width: calc(100% + 3.4rem);
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: -1.75rem;
+        margin-left: -1.75rem;
+        @include xl {
+            width: 100%;
+            max-width: 870px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    &-text{
+        width: 100%;
+        padding-top: 25px;
+        @include xl {
+            padding-top: 45px;
+            margin-bottom: -12px;
+            width: calc(100% - 58px);
+        }
+        p{
+            position: relative;
+            z-index: 3;
+        }
+    }
+    &-form{
+        padding: 40px 35px 35px;
+        position: relative;
+        z-index: 2;
+        form{
+            margin-top: 1.5rem;
+            @include xl {margin-top: 0;}
+        }
+    }
+}

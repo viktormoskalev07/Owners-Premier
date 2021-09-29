@@ -1,6 +1,24 @@
-footer{
+.footer{
   flex: 0 0 auto;
-  background-color: $colorText;
-  color: $colorWhite;
+  margin-top: 73px;
+  @include xl {
+    margin-top: 63px;
+  }
+  &-top{
+    padding: 55px 22px 45px;
+    font-size: 20px;
+    line-height: 26px;
+    @include lg{
+      padding: 50px 58px 60px;
+    }
+  }
+  &-bottom{
+    padding: 40px 35px 45px;
+
+  }
+}
+.copyright{
+  font-size: 0.875rem;
+  line-height: 1.125rem;
 }
  

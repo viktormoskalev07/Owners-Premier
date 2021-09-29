@@ -1,0 +1,60 @@
+.swiper{
+    overflow: hidden;
+    position: relative;
+    &-slide{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        min-height: 555px;
+        img{
+            width: auto;
+            height: auto;
+        }
+        @include xl{
+            min-height: 480px;
+        }
+    }
+}
+.btn{
+    &-next, &-prev{
+        display: block;
+        width: 68px;
+        height: 70px;
+        background: $colorBeigeDark;
+        position: relative;
+        position: absolute;
+        z-index: 2;
+        outline: none!important;
+        &.dark{
+            background: $colorText;
+        }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            content: '▸';
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: $colorWhite;
+        }
+    }
+    &-prev{
+        &::after{
+            transform: translate(-50%, -50%) scale(-1, 1);
+        }
+    }
+}
+
+.hero-next, .hero-prev{
+    top: 70px;
+}
+.hero-prev{
+    left: 0;
+}
+.hero-next{
+    right: -0;
+}

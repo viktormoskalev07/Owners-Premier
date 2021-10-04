@@ -9,6 +9,9 @@
         svg{fill:$colorText}
     }
 }
+.text-block{
+    line-height: 26px;
+}
 .hero{
     position: relative;
     &-bottom{
@@ -71,6 +74,30 @@
         form{
             margin-top: 1.5rem;
             @include xl {margin-top: 0;}
+        }
+    }
+}
+.brilliant-holiday{
+    padding: 55px 0 45px;
+    @include lg{padding: 100px 0;}
+    .img{
+        &-block{
+            margin-bottom: 230px;
+            @include lg{
+                left: -30px;
+                margin-bottom: 0;
+            }
+        }
+        &-absolute{
+            position: absolute;
+            right: 85px;
+            width: 100%;
+            max-width: 333px;
+            bottom: -170px;
+            @include lg{
+                bottom: -160px;
+                right: 55px;
+            }
         }
     }
 }

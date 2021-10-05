@@ -5,11 +5,17 @@
         display: flex;
         justify-content: center;
         overflow: hidden;
-        min-height: 555px;
+        
         img{
             width: auto;
             height: auto;
         }
+        
+    }
+}
+.HeroSwiper{
+    .swiper-slide{
+        min-height: 555px;
         @include xl{
             min-height: 480px;
         }
@@ -25,6 +31,7 @@
         position: absolute;
         z-index: 2;
         outline: none!important;
+        transition: 0.3s linear;
         &.dark{
             background: $colorText;
         }
@@ -41,6 +48,9 @@
             background-size: 100%;
             color: $colorWhite;
         }
+        &:hover{
+            background: $colorText
+        }
     }
     &-prev{
         &::after{
@@ -48,13 +58,22 @@
         }
     }
 }
-
+.swiper-button-disabled{display: none;}
 .hero-next, .hero-prev{
-    top: 70px;
+    top: 140px;
+    @include xl{
+        top: 70px;
+    }
 }
 .hero-prev{
     left: 0;
 }
 .hero-next{
     right: -0;
+}
+.choose-prev{display: none;}
+.choose-next{
+    right: -9px;
+    top: 0;
+    @include xl{display: none;}
 }

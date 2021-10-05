@@ -17,11 +17,28 @@
     font-family: $fontHeavy;
     text-transform: $uppercase;
     color: $colorBeigeDark;
-    font-size: $font16;
+    font-size: $font24;
+    @include xl{
+        font-size: $font16;
+    }
 }
 .form-control{
-    padding: 25px;
+    padding: 17px 25px;
+    box-shadow: none;
+    border: 1px solid #80918e;
+    transition: 0.3s linear;
+    &::placeholder{
+        color: $colorBeigeDark;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+        border-color: #80918e;
+        &::placeholder{
+            color: transparent;
+        }
+    }
     @include xl {
-        padding: 15px;
+        padding: 11px 15px 12px;
     }
 }

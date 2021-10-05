@@ -27,7 +27,8 @@ button{
     }
     &>span{
       display: block;
-      margin-left: 10px;
+      margin-left: 18px;
+      @include xl{margin-left: 10px;}
     }
     img{
       width: 25px;
@@ -53,9 +54,12 @@ button{
   border-radius: 0;
   text-transform: $uppercase;
   transition: .3s linear;
+  min-width: 150px;
+  flex: 1;
   @include xl {
     padding: 16px 18px;
     font-size: $font16;
+    min-width: 100px;
   }
   &:hover{
     background-color: $colorWhite;

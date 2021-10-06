@@ -1,0 +1,32 @@
+.journey-search{
+    margin-bottom: 74px;
+    &-text{
+        padding: 44px 35px 0;
+    }
+    &-form{
+        padding: 0 35px 36px;
+    }
+}
+
+.discover-parks{
+    &-item{
+        padding: 45px 0;
+        @include lg {
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.journey-hero{
+    &-block{
+        right: 0;
+        bottom: 0;
+        @include lg {
+            width: 100%;
+            max-width: 800px;
+            padding: 54px 50px;
+            bottom: -50px;
+        }
+    }
+}

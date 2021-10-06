@@ -261,3 +261,62 @@
         }
     }
 }
+.get-in-touch{
+    padding: 28px 0;
+    @include lg {
+        padding: 42px 53px 0;
+    }
+    form{
+        padding: 54px 0 0;
+        &>.col{
+            width: 100%;
+            max-width: 505px;
+            margin: 0 auto;
+            @include lg{
+                max-width: 100%;
+            }
+        }
+        @include sm {
+            padding: 54px 0 0;
+        }
+        @include lg {
+            padding: 28px 8px 0 15px;
+        } 
+    }
+    .sub-title{
+        margin-top: 4px;
+        padding: 0 3px;
+        margin-bottom: 27px;
+    }
+    input.form-control, 
+    select.form-select{
+        width: 100%;
+        margin-bottom: 28px;
+        @include lg {
+            max-width: 301px;
+            margin-bottom: 33px;
+            margin-right: 21px;
+        }
+    }
+    textarea{
+        width: 100%;
+        max-width: 636px;
+        min-height: 307px;
+        margin-bottom: 24px;
+        @include lg {
+            margin-bottom: 33px;
+            min-height: 100px;
+        }
+    }
+    .form-check{
+        width: 200px;
+        @include lg {
+            width: auto;
+            margin-right: 34.5px!important;
+        }
+    }
+    .button[type="submit"]{
+        margin: 15px 15px 0 0;
+        @include lg {margin: 5px 28px 0 0; }
+    }
+}

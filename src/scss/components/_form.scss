@@ -1,7 +1,7 @@
 .form-select{
     width: auto;
     min-width: 150px;
-    padding: 25px 40px 25px 25px;
+    padding: 19px 35px 16px 24px;
     border: 0.5px solid $colorBeigeDark;
     @include xl {
         padding: 12px 40px 11px 15px;
@@ -25,7 +25,7 @@
 .form-control{
     padding: 17px 25px;
     box-shadow: none;
-    border: 1px solid #80918e;
+    border: 0.5px solid $colorBeigeDark;
     transition: 0.3s linear;
     &::placeholder{
         color: $colorBeigeDark;
@@ -39,6 +39,36 @@
         }
     }
     @include xl {
-        padding: 11px 15px 12px;
+        padding: 12px 20px 10px;
+    }
+}
+textarea.form-control{resize: none;}
+.form-check{
+    margin: 0;
+    color: $colorBeigeDark;
+    font-family: $fontHeavy;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    @include lg {
+        font-size: 14px;
+    }
+    &-input[type='checkbox']{
+        width: 52px;
+        height: 52px;
+        border: 0.5px solid $colorBeigeDark;
+        border-radius: 0;
+        margin-top: 0;
+        margin-right: 31px;
+        cursor: pointer;
+        &:checked{
+            background-color: $colorBeigeDark;
+        }
+        @include lg{
+            width: 25px;
+            height: 25px;
+            margin-right: 13px;
+        }
     }
 }

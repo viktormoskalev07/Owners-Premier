@@ -1,0 +1,32 @@
+@@include('html-templates/head.html',{
+    title:'Owners Premier',
+    metadesc:'page with very interesting content'
+  })
+
+<main class="main">
+    @@include('./html-templates/detail/_back_block.html')
+    @@include('./html-templates/detail/_detail_main.html')
+    @@include('./html-templates/detail/_detail_slider.html')
+    @@include('./html-templates/detail/_all_in_detail.html')
+    @@include('./html-templates/detail/_key_fetures.html')
+    @@include('./html-templates/detail/_finance_planner.html')
+    @@include('./html-templates/homepage/_brilliant-holiday.html', {
+      'title': 'award winning park',
+      'subtitle': 'make friends at brean sands',
+      'text1': "Formerly known to many as Unity Farm, Holiday Resort Unity is a family-run Holiday Park celebrating over 70 years of welcoming people on holiday to the Somerset Coast. If you buy a static caravan or holiday home here, just across the road you will have access to 7 miles of sandy beach, the new stretch of the England Coast Path, and the National Trust site of Brean Down.",
+      'text2': "Holiday Resort Unity is located just 10 minutes' drive from the M5, making your holiday home easily accessible, and, as an owner, you won't have to worry about checking in upon arrival, you can head straight to your holiday home and begin your holiday straight away.",
+      'comma': ''
+    })
+    @@include('./html-templates/detail/_maping.html')
+    @@include('./html-templates/detail/_bottom_slider.html')
+    @@include('./html-templates/detail/_why_buy.html')
+    @@include('./html-templates/detail/_social.html')
+</main>
+@@include('./html-templates/footer.html',{
+})
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="js/swiper-min.js"> </script>
+<script defer src="js/main.js"> </script>
+</body>
+
+</html>

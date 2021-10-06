@@ -1,0 +1,294 @@
+.back_block {
+    margin: 30px 0 50px 0;
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+    a {
+        color: #a48242;
+        padding-left: 30px;
+        text-decoration: underline;
+        background: url(../images/icons/arrow-left.png) no-repeat left;
+    }
+}
+.detail_slider_section {
+    margin: 40px auto 60px;
+    .hot_offer {
+        background: #ede6d9;
+        margin-left: -1px;
+        padding: 60px 45px 40px;
+        color: #a48242;
+        @media (max-width: 576px) {
+            padding: 40px 35px 40px;
+        }
+        .price_strong {
+            font-size: 50px;
+            margin-bottom: 50px;
+            @media (max-width: 576px) {
+                font-size: 40px;
+            }
+        }
+        p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            img {
+                max-width: 30px;
+                margin-right: 25px;
+            }
+            strong {
+                margin-right: 10px;
+            }
+        }
+        a {
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-right: 20px;
+        }
+        .tel {
+            font-size: 40px;
+            line-height: 1;
+        }
+        button {
+            background: #a48242;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 10px 30px 10px;
+            font-size: 16px;
+            font-family: 'FuturaHeavy';
+        }
+    }
+    .marker {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 0;
+        z-index: 1;
+        img {
+            object-fit: contain;
+        }
+    }
+    .detail_slider {
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+        .detail-next {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+        .detail-prev {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            max-height: 500px;
+            img {
+                max-height: 500px;
+            }
+        }
+        @media (max-width: 576px) {
+            max-height: 440px;
+            img {
+                max-height: 440px;
+            }
+        }
+    }
+}
+.bottom_slider {
+    .swiper-slide {
+        min-height: initial;
+    }
+    .bottom-next {
+        position: absolute;
+        right: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .bottom-prev {
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+.social {
+    margin-top: 50px;
+    a {
+        text-decoration: underline;
+        padding-left: 50px;
+    }
+    a:hover {
+        color: #a48242;
+    }
+    a:first-child {
+        margin-right: 80px;
+        background: url(../images/icons/messenger.png) no-repeat left;
+        padding-bottom: 10px;
+    }
+    a:last-child {
+        background: url(../images/icons/envelope.png) no-repeat left;
+    }
+}
+.why_buy {
+    background: #e7eae9;
+    padding: 80px;
+    margin-top: 70px;
+    h2 {
+        font-size: 6.875rem;
+        margin-bottom: 60px;
+    }
+    img {
+        max-width: 110px;
+        max-height: 110px;
+        object-fit: contain;
+        margin-bottom: 50px;
+    }
+}
+.maping {
+    margin: 100px auto;
+    .map_block {
+        left: -30px;
+        position: relative;
+        @media (max-width: 992px) {
+            left: 0;
+        }
+        div {
+            margin-top: 35px;
+            img {
+                max-width: 210px;
+            }
+        }
+    }
+    .map_points {
+        p:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 22px;
+            padding-left: 50px;
+            background: url(../images/icons/complete.png) no-repeat left;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.finance_planner {
+    .about_brean {
+        margin-top: 70px;
+        h2 {
+            font-size: 6.875rem;
+            @media (max-width: 992px) {
+                font-size: 5.875rem;
+                text-align: center;
+            }
+            @media (max-width: 768px) {
+                font-size: 4.875rem;
+            }
+            @media (max-width: 768px) {
+                font-size: 3.875rem;
+            }
+        }
+        span {
+            padding:10px 0px 10px 50px;
+            background: url(../images/icons/location.png) no-repeat left;
+        }
+    }
+    h2 {
+        line-height: 0.8;
+        margin-bottom: 15px;
+    }
+    .prices_block {
+        background: #e7eae9;
+    }
+    .prices {
+        p {
+            font-size: 22px;
+            display: flex;
+            span {
+                max-width: 190px;
+                width: 100%;
+            }
+            strong {
+                margin-left: 45px;
+            }
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.key-features {
+    margin-bottom: 50px;
+    .key-parrent {
+        background: #ede6d9;
+        h2 {
+            line-height: normal;
+            margin-bottom: 0;
+        }
+    }
+    .key-item {
+        font-size: 12px;
+        max-width: 100px;
+        text-align: center;
+        line-height: normal;
+        img {
+            max-height: 90px;
+            object-fit: contain;
+            margin-bottom: 25px;
+        }
+    }
+    .key-item:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+.detail {
+    h1 {
+        color: #a48242;
+        @media (max-width: 768px) {
+            font-size: 5.875rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 4.875rem;
+            line-height: 1!important;
+        }
+        @media (max-width: 480px) {
+            font-size: 3.875rem;
+        }
+    }
+    .detail_header {
+        display: flex;
+        align-items: flex-start;
+    }
+    .coming_button {
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+    .coming_button:hover {
+        border: 1px solid #002b49;
+    }
+}
+.all_in_detail {
+    margin-bottom: 50px;
+    h2{
+        margin-bottom: 0;
+        line-height: normal;
+    }
+}
+.coming_button {
+    border: 1px solid #002b49;
+    font-family: 'FuturaHeavy';
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #002b49;
+}

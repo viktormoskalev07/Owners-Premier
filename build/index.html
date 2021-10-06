@@ -1,294 +1,342 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="en"> 
 <head>
   <meta charset="UTF-8">
-  <title>Gulp</title>
-  <link rel="stylesheet" href="css/main.css"> 
+  <title>Owners Premier</title>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"  content="page with very interesting content">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/swiper-bundle.css"> 
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="body">
-  
-<div class="footer-to-bottom">
-  <div class="header-place"></div>
-<header class="header">
-    <div class="container ">
-        <div class="header__content">
-            <div class="header__top">
-                <figure class="header__logo"><a href="./"><img src="images/logo.png" alt="Logo"></a></figure>
-                <button type="button" class="nav__btn">
-                    <span class="nav__btn__row"></span>
-                    <span class="nav__btn__row"></span>
-                    <span class="nav__btn__row"></span>
+<body>
+
+<header class="sticky-top">
+    <div class="container-fluid">
+        <nav class="nav navbar navbar-expand-xl p-0 flex-nowrap position-static">
+            <div class="col-6 col-xl-2 order-2 order-xl-1 d-flex justify-content-center justify-content-xl-start">
+                <figure class="logo-header">
+                    <a href="./">
+                        <img src="images/LOGO.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-3 d-xl-none order-3 d-flex justify-content-end">
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-flex justify-content-end align-items-center">
+                        <span class="menu-icon"><span></span></span>
+                        menu
+                    </span>
                 </button>
             </div>
-
-            <nav class="nav">
-                <ul class="nav-menu__wrap">
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="https://github.com/ ">git</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
-                </ul>
-            </nav>
-            <div class="header__bottom">
-                <ul class="header__social">
-                    <li> <a title="instagram-link" href="#"> <img src="images/icons/Insta.svg" alt="instagram-link"></a>
+            <div class="col-8 order-xl-2 collapse navbar-collapse justify-content-center" id="navbarHeader">
+                <ul class="navbar-nav">
+                    <li class="nav-item">                    
+                        <a class="nav-link" href="#">SEARCH HOLIDAY HOMES</a>
                     </li>
-                    <li> <a title="linkedin-link" href="#"><img src="images/icons/LinkedIn.svg" alt="linkedin-link"></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OUR RESORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LATEST OFFERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guide to ownership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get in touch</a>
                     </li>
                 </ul>
             </div>
-
-        </div>
+            <div class="col-3 col-xl-2 order-1 order-xl-3 d-flex justify-content-start justify-content-xl-end">
+                <button class="btn-login d-flex align-items-center">
+                    <img src="images/icons/key-with-hole.png" alt="login">
+                    <span><span class="d-none d-md-inline">owners </span>login</span>
+                </button>
+            </div>
+            
+        </nav>
     </div>
 </header> 
 
-<link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
 <main class="main">
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
+<section class="hero">
+<div class="container-fluid">
+    <div class="swiper HeroSwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/home_page/banner.jpg" class="d-block" alt="...">
     </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
+    <div class="swiper-slide">
+      <img src="./images/home_page/banner.jpg" class="d-block" alt="...">
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/home_page/banner.jpg" class="d-block" alt="...">
+    </div>
   </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
+  
 </div>
-
-</section>
-
-
-<section>
-    <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
+<div class="btn-next hero-next"></div>
+<div class="btn-prev hero-prev"></div>
+    <div class="hero-bottom position-relative">
+        <div class="hero-left bg-white">
+            <h1>relax and enjoy<span class="color-beige">...</span></h1>
+            <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title">All the benefits of holiday home ownership</span>
+            <a href="#" class="button">Find out more</a>
         </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
-        </div>
-    </div>
-</div>
-        </div>
-
- 
- 
-
-    </div> 
-</section>
- 
-
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
-    </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
-  </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
-</div>
-
-</section>
-
-
-<section>
-    <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
+        <div class="hero-right col-12 col-xl-8 offset-xl-4">
+            <div class="bg-beige hero-text">
+                <p class="fs-22 text-center text-uppercase color-text mb-0 sub-title">Find your next dream holiday home</p>
+            </div>
+            <div class="bg-beige w-100 hero-form text-center">
+                <button class="d-xl-none button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Begin your search
+                </button>
+                <div class="collapse d-xl-block" id="collapseExample">
+                    <form action="#" class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="budget">
+                            <option selected>budget</option>
+                            <option value="0">budget1</option>
+                            <option value="1">budget2</option>
+                            <option value="2">budget3</option>
+                            <option value="3">budget4</option>
+                            <option value="4">budget5</option>
+                        </select>
+                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="condition">
+                            <option selected>condition</option>
+                            <option value="0">condition1</option>
+                            <option value="1">condition2</option>
+                            <option value="2">condition3</option>
+                            <option value="3">condition4</option>
+                            <option value="4">condition5</option>
+                        </select>
+                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="numderofbedrooms">
+                            <option selected>numder of bedrooms</option>
+                            <option value="0">1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                        </select>
+                        <button type="submit" class="button">Find holiday homes</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+            
         </div>
     </div>
 </div>
-        </div>
-
- 
- 
-
-    </div> 
-</section>
- 
-
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
-    </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
-  </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
-</div>
-
 </section>
 
-
-<section>
-    <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
+<section class="brilliant-holiday">
+    <div class="container-fluid d-flex justify-content-between align-items-start flex-wrap">
+        <div class="img-block position-relative">
+            <img src="./images/home_page/Caravans_on_park.jpg" alt="" class="w-100">
+            <div class="img-absolute">
+                <img src="./images/home_page/Kid_on_beach_0.jpg" alt="">
+            </div>
         </div>
+        <div class="brilliant-holiday-text justify-content-between d-flex flex-column align-items-start">
+            <h2>brilliant holidays<span class="color-beige">,</span></h2>
+            <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title sub-title--m">with Brean Leisure Resort</span>
+            <div class="text-block">
+                <p class="mb-4">Welcome to Brean Leisure Resort! A family of 4 individual holiday parks, each with their own unique personality, situated on the Somerset Coast. Whether you are looking for full on family fun, spectacular coastal views or a place to relax with loved ones - you will find Brean Leisure Resort meets your requirements.</p>
+                <p class="mb-0">If you’ve always dreamed of owning your own holiday home, and escaping the day to day whenever you want, Brean Leisure Resort can make your dreams come true.</p>
+            </div>
+            <a href="#" class="button align-self-center align-self-lg-start">Find out more</a>
+        </div>
+        
     </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
-        </div>
-    </div>
-</div>
-        </div>
-
- 
- 
-
-    </div> 
 </section>
- 
+
+<section class="sing-up bg-text bg-pattern">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="d-flex align-items-center col-12 col-xl-7 color-white flex-wrap flex-column flex-xl-row">
+                <h2>sign up<span class="color-beige">...</span></h2>
+                <span class="color-white text-uppercase fs-22 d-block sub-title d-block">to get exclusive news and deals</span>
+            </div>
+            <div class="col-12 col-xl-5">
+                <form action="#" class="d-flex justify-content-between">
+                    <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS">
+                    <button type="submit" class="button">sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 text-center text-sm-start">
+                <h2>why choose</h2>
+                <span class="color-beige text-uppercase fs-22 d-block sub-title sub-title--m">Brean Leisure Resort</span>
+                <a href="#" class="button align-self-center align-self-lg-start d-inline-block">Find out more</a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-8 col-xl-9 d-flex why-choose-items flex-wrap position-relative">
+                <div class="swiper ChooseSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/coast.png" alt="">
+                            <span>Stunning Coastal <br> Location</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/suitcase.png" alt="">
+                            <span>holidays all <br> year round</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/friends.png" alt="">
+                            <span>friends <br> for life</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/fast-food.png" alt="">
+                            <span>food & drink with <br> owner discount</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/disabillity-symbol.png" alt="">
+                            <span>easily <br> accessible</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="why-choose-item">
+                            <img src="./images/icons/family.png" alt="">
+                            <span>family (and pet)<br> friendly</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="btn-next choose-next"></div>
+            <div class="btn-prev choose-prev"></div>
+        </div>
+    </div>
+</section>
+
+<section class="endless-holiday">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap">
+            <div class="img-block position-relative order-2 order-xl-1">
+                <img src="./images/home_page/endless_holidays1.jpg" alt="" class="w-100">
+                <a href="#" class="btn-next position-absolute bottom-0 left-0"></a>
+                <div class="img-absolute">
+                    <img src="./images/home_page/endless_holidays3.jpg" alt="">
+                    <img src="./images/home_page/endless_holidays2.jpg" alt="">
+                </div>
+            </div>
+            <div class="endless-holiday-text bg-beige d-flex flex-column order-1 order-xl-2">
+                <h2>endless holidays</h2>
+                <span class="color-beige text-uppercase fs-22 d-block sub-title sub-title--m">CHOOSE YOUR HOME FROM HOME</span>
+                <div class="text-block">
+                    <p class="mb-4">In our multi award winning Resort, so you can relax, unwind and enjoy your downtime, whenever you please.</p>
+                    <p class="mb-0">You’re just a drive away from your new Happy Place.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="arrange_a_visit bg-beigeDark bg-pattern">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 color-white text-center text-lg-start mb-3 mb-lg-0">
+                <h2>arrange a visit</h2>
+                <span class="text-uppercase fs-22 d-block sub-title d-block">or virtual appointment</span>
+            </div>
+            <div class="col color-white text-block mb-4 mb-lg-0 text-center text-lg-start">
+                <p class="fw-bold m-0">We would love you to experience Brean Resorts ownership for yourself.</p>
+                <p class="m-0">So why not let us know what you're looking for in a dream holiday home - we'd love to make your dreams a reality</p>
+            </div>
+            <div class="col-12 col-lg-2 text-center text-lg-end p-0">
+                <a href="#" class="button button-invert d-inline-block align-self-end">ARRANGE A VISIT</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 </main>
 
-<footer id="contact" class="footer">
-<a href="#">back</a>
-
+<footer class="footer">
+    <div class="footer-top bg-text ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 sub-title color-beige text-uppercase mb-4">
+                    Contact details
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <span class="color-white">Ownership Centre <br/> Holiday Resort Unity, Coast Road, Brean Sands, Somerset, TA8 2 RB</span>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="color-white mb-4 ps-4">
+                        e: <a href="mailto:ownershop@brean.com" class="color-beige">ownershop@brean.com</a> <br/>
+                        t: <a href="tel:01278751602" class="color-beige">01278 751 602</a>
+                    </div>
+                    <div class="color-white ps-4">Open daily: 9am - 5pm</div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-4 order-1 mb-5 align-self-start">
+                    <h3>call us<span class="color-beige">...</span></h3>
+                    <a href="tel:01278751602" class="color-beige fs-40">01278 751 602</a>
+                </div>
+                <div class="col-6 col-lg-4 order-2 ps-3 mb-5 align-self-start">
+                    <h3>Join us<span class="color-beige">...</span></h3>
+                    <div class="d-flex align-items-center">
+                        <a href="#" target="_blank" class="social-link me-4">
+                            <svg width="21" height="41" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-link me-4">
+                            <svg width="41" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-link me-4">
+                            <svg width="41" height="29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-3 order-lg-4 justify-content-around d-flex flex-wrap mb-5">
+                    <img src="./images/brands/uk-pool-spa-awardsx3.png" alt="uk-pool-spa-awards" style="width: 75px; height: 74px;" class="d-block m-2">
+                    <img src="./images/brands/green-tourism-awardsx3.png" alt="green-tourism-awards" style="width: 49px; height: 64px;" class="d-block m-2">
+                    <img src="./images/brands/sba-winner-16x3.png" alt="sba-winner" style="width: 142px; height: 62px;" class="d-block m-2">
+                    <img src="./images/brands/ukpool_spa-2016x3.png" alt="ukpool_spa" style="width: 178px; height: 49px;" class="d-block m-2">
+                    <img src="./images/brands/david-bellamy-conservation-Award-2017-18-goldx3.png" alt="onservation-Award" style="width: 42px; height: 74px;" class="d-block m-2">
+                    <img src="./images/brands/bristol-bath-somerset-gold-201617x3.png" alt="bristol-bath-somerset-gold" style="width: 55px; height: 72px;" class="d-block m-2">
+                </div>
+                <div class="col-12 col-lg-5 order-4 order-lg-3 mb-5">
+                    <p class="color-beige mb-0 copyright">© Holiday Resort Unity 2018. Registered no: 00971857. Registered for VAT number: 130136327 <br/>
+                        Office: Holiday Resort Unity, Coast Road, Brean Sands, Somerset TA8 2RB.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 
 <script >
     const templateUrl = '<?php= get_bloginfo("template_url"); ?>';
  </script>
-
-</div> 
-
-<script  src="js/main.js"> </script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="js/swiper-min.js"> </script>
+<script defer src="js/main.js"> </script>
 </body>
 
 </html>

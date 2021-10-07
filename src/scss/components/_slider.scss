@@ -71,8 +71,8 @@
 .hero-next{
     right: -0;
 }
-.choose-prev{display: none;}
-.choose-next{
+.choose-prev, .included-prev{display: none;}
+.choose-next, .included-next{
     right: -9px;
     top: 0;
     @include xl{display: none;}

@@ -10,23 +10,190 @@
 
 .discover-parks{
     &-item{
-        padding: 45px 0;
+        padding: 20px 0;
+        @include sm {
+            padding: 32px 0 73px; 
+        }
         @include lg {
             padding: 60px 0;
-            margin-bottom: 40px;
+        }
+        .img-block{
+            margin-bottom: 20px;
+            @include sm {
+                margin-bottom: 36px;
+            }
+            @include lg {
+                margin-bottom: 0;
+            }
+        }
+        .text-block{
+            margin-bottom: 1.5rem;
+            @include lg {margin-bottom: 0;}
+            p:last-child{margin-bottom: 0;}
+        }
+        h2{
+            margin-bottom: 15px;
+            @include sm {
+                line-height: 65px;
+            }
+        }
+        h2, .text-block{
+            @include sm {
+                padding: 0 5px;
+            }
+        }
+        .sub-title{
+            margin-bottom: 13px;
+            @include sm { 
+                padding: 0 8px;
+            }
         }
     }
 }
 
+.green-block{
+    position: relative;
+    text-align: center;
+    padding: 105px 20px 53px;
+    width: 100%;
+    @include sm {
+        position: absolute;
+        width: 361px;
+        min-width: 361px;
+    }
+    &:after, &:before{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: block;
+    }
+    &:after{
+        content: '';
+        width: 100px;
+        height: 51px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAzCAYAAABhaa0bAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuklEQVR4nO3Ru22UYRCG0cPKFSDqICB1Rjm0QRPugYgSaIDELRC6B5Mg5JXX6//yXWb2nyecSV7pfPj5/f4zPqoi9PsOz/iBT5PHHL0H/DrhEV/xNHfPoXvANzyf/h0KZV7/MeD04lEo4zvD4ByEQhnZKwxeg1AoI7qIwWUQCqVnb2LwNgiF0qOrGFwHoVBa9i4G74NQKC1ahMEyEAplT4sxWA5CoWxpFQbrQCiUNa3GYD0IhbKkTRhsA6FQrrUZg+0gFMqldmGwD4RCedluDPaDUCg0wqANCMdGaYZBOxCOidIUg7YgHAulOQbtQTgGShcM+oBw2yjdMOgHwm2idMWgLwi3hdIdg/4g3AbKEAzGgJAbZRgG40DIiTIUg7Eg5EIZjsF4EHKgTMFgDgixUaZhMA+EmChTMZgLQiyU6RjMByEGSggMYoAwFyUMBnFAmIMSCoNYIIxFCYdBPBDGoITEICYIfVHCYhAXhD4ooTGIDUJblPAYxAehDUoKDHKAsA8lDQZ5QNiGkgqDXCCsQ0mHQT4QlqGkxCAnCNdR0mKQF4TLKKkxyA3COUp6DLibPaBBj/iCP5JjwF87eclGZvcA/QAAAABJRU5ErkJggg==');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: calc(100% - 13px);
+    }
+    &:before{
+        content: '‘‘';
+        font-size: 120px;
+        line-height: 1;
+        top: 30px;
+        color: $colorBeigeDark;
+        font-family: $fontHead;
+    }
+
+}
+
 .journey-hero{
+    margin-bottom: 50px;
+    @include sm {
+        margin-bottom: 315px;
+    }
+    @include lg {
+        margin-bottom: 130px;
+    }
     &-block{
-        right: 0;
-        bottom: 0;
+        width: 100%;
+        padding: 20px 0;
+        .sub-title{
+            margin: 10px 0 20px;
+            @include sm {
+                margin: 17px 9px 43px;
+            }
+        }
+        .button{
+            @include sm{
+                margin: 0 5px;
+            }
+        }
+        @include sm{
+            min-height: 435px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            max-width: 545px;
+            padding: 37px 10px 37px 37px;
+            top: 337px;
+        }
         @include lg {
-            width: 100%;
             max-width: 800px;
             padding: 54px 50px;
             bottom: -50px;
+            top: auto;
+        }
+    }
+    &-img{
+        height: 200px;
+        img{
+            height: 100%;
+        }
+        @include sm {
+            height: 555px;
+            margin-bottom: 187px;
+        }
+        @include lg{
+            margin-bottom: 0;
+            height: 481px;
+        }
+    }
+    &-gray{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: calc(100% + 2.626rem);
+        margin-left: -1.313rem;
+        h2{
+            margin-bottom: 10px;
+        }
+        .sub-title{
+            margin-bottom: 20px;
+            @include lg {
+                margin-bottom: 30px;
+            }
+        }
+        @include sm {
+            padding: 77px 15px 102px;
+        }
+        @include lg{
+            max-width: 100%;
+            margin: 0 30px;
+            padding: 90px 450px 60px 55px;
+        }
+        &-text{
+            width: 100%;
+            padding: 20px;
+            
+            @include lg {
+                max-width: 755px;
+            }
+        }
+    }
+    .green-block{
+        @include sm {
+            top: calc(100% - 66px);
+            right: 50%;
+            transform: translate(-50%, 0);
+        }
+        @include lg{
+            right: 50px;
+            bottom: -30px;
+            top: auto;
+            transform: none;
+        }
+    }
+}
+
+.why-choose-us{
+    .img-absolute{
+        position: relative;
+        
+        @include sm {
+            z-index: -1;
+            margin-top: -3rem;
         }
     }
 }

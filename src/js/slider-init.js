@@ -36,3 +36,27 @@ let ChooseSwiper = new Swiper(".ChooseSwiper", {
         },
     },
 });
+let IncludedSwiper = new Swiper(".IncludedSwiper", {
+  spaceBetween: 0,
+  loop: true,
+  grabCursor:'true',
+  centeredSlides: false,
+  navigation: {
+      nextEl: '.included-next',
+      prevEl: '.included-prev',
+  },
+  breakpoints: {
+      0: {
+        slidesPerView: 3,
+      },
+      576: {
+          slidesPerView: 1.8,
+      },
+      768: {
+          slidesPerView: 2.5,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+  },
+});

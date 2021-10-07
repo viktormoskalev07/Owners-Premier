@@ -45,17 +45,21 @@ button{
   }
 }
 .button{
-  font-size: $font24;
+  font-size: $font16;
   font-family: $fontHeavy;
   line-height: 1;
-  padding: 25px;
   background-color: $colorBeigeDark;
   color: $colorWhite;
   border-radius: 0;
   text-transform: $uppercase;
   transition: .3s linear;
   min-width: 150px;
+  padding: 16px 18px;
   text-decoration: none;
+  @include sm {
+    font-size: $font24;
+    padding: 25px;
+  }
   @include xl {
     padding: 16px 18px;
     font-size: $font16;

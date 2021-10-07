@@ -1,13 +1,16 @@
 .form-select{
     width: auto;
     min-width: 150px;
-    padding: 19px 35px 16px 24px;
+    padding: 10px 35px 10px 15px;
     border: 0.5px solid $colorBeigeDark;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAXElEQVQokZ3MsQ2DMAAEwMNiqwxGXNM449BRZrQ0CQJjG+Lv/vW6YZkfCZP+xIAnXr0AUviWHigiQdiN/0AbkCN3oQNQQq6gE1BDalARaCE5VAVgbCA/aMW7dfoAMCES+auAws8AAAAASUVORK5CYII=');
     appearance: none;
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
+    @include sm {
+        padding: 19px 35px 16px 24px;
+    }
     @include xl {
         padding: 12px 40px 11px 15px;
     }
@@ -23,15 +26,18 @@
     font-family: $fontHeavy;
     text-transform: $uppercase;
     color: $colorBeigeDark;
-    font-size: $font24;
+    font-size: $font16;
     line-height: 1.5;
     height: auto;
+    @include sm {
+        font-size: $font24; 
+    }
     @include xl{
         font-size: $font16;
     }
 }
 .form-control{
-    padding: 17px 25px;
+    padding: 10px 15px;
     box-shadow: none;
     border: 0.5px solid $colorBeigeDark;
     transition: 0.3s linear;
@@ -47,27 +53,38 @@
             color: transparent;
         }
     }
+    @include sm {
+        padding: 17px 25px;
+    }
     @include xl {
         padding: 12px 20px 10px;
     }
 }
+
 textarea.form-control{resize: none;}
+
 .form-check{
     margin: 0;
     padding-left: 0;
     color: $colorBeigeDark;
     font-family: $fontHeavy;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 14px;
+    @include sm {
+        font-size: 24px; 
+    }
     @include lg {
         font-size: 14px;
     }
     &-label{
-        padding-left: 83px;
+        padding-left: 38px;
         position: relative;
         cursor: pointer;
         display: flex;
         align-items: center;
+        @include sm {
+            padding-left: 83px;
+        }
         @include lg {
             padding-left: 38px;
         }
@@ -76,12 +93,18 @@ textarea.form-control{resize: none;}
             display: block;
             cursor: pointer;
             position: relative;
-            left: -83px;
+            left: -38px;
             background: none;
-            width: 52px;
-            height: 52px;
-            min-width: 52px;
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
             border: 0.5px solid $colorBeigeDark;
+            @include sm {
+                width: 52px;
+                height: 52px;
+                min-width: 52px;
+                left: -83px;
+            }
             @include lg {
                 width: 25px;
                 height: 25px;

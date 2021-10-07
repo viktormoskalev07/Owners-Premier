@@ -3,12 +3,18 @@
     min-width: 150px;
     padding: 19px 35px 16px 24px;
     border: 0.5px solid $colorBeigeDark;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAXElEQVQokZ3MsQ2DMAAEwMNiqwxGXNM449BRZrQ0CQJjG+Lv/vW6YZkfCZP+xIAnXr0AUviWHigiQdiN/0AbkCN3oQNQQq6gE1BDalARaCE5VAVgbCA/aMW7dfoAMCES+auAws8AAAAASUVORK5CYII=');
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
     @include xl {
         padding: 12px 40px 11px 15px;
     }
     &:focus{
         border: 0.5px solid $colorBeigeDark;
         box-shadow: none;
+        outline: none;
     }
 }
 .form-select, .form-control{
@@ -18,6 +24,8 @@
     text-transform: $uppercase;
     color: $colorBeigeDark;
     font-size: $font24;
+    line-height: 1.5;
+    height: auto;
     @include xl{
         font-size: $font16;
     }
@@ -27,6 +35,7 @@
     box-shadow: none;
     border: 0.5px solid $colorBeigeDark;
     transition: 0.3s linear;
+    
     &::placeholder{
         color: $colorBeigeDark;
     }
@@ -45,30 +54,46 @@
 textarea.form-control{resize: none;}
 .form-check{
     margin: 0;
+    padding-left: 0;
     color: $colorBeigeDark;
     font-family: $fontHeavy;
     cursor: pointer;
     font-size: 24px;
-    display: flex;
-    align-items: center;
     @include lg {
         font-size: 14px;
     }
-    &-input[type='checkbox']{
-        width: 52px;
-        height: 52px;
-        border: 0.5px solid $colorBeigeDark;
-        border-radius: 0;
-        margin-top: 0;
-        margin-right: 31px;
+    &-label{
+        padding-left: 83px;
+        position: relative;
         cursor: pointer;
-        &:checked{
-            background-color: $colorBeigeDark;
+        display: flex;
+        align-items: center;
+        @include lg {
+            padding-left: 38px;
         }
-        @include lg{
-            width: 25px;
-            height: 25px;
-            margin-right: 13px;
+        &:before{
+            content: '';
+            display: block;
+            cursor: pointer;
+            position: relative;
+            left: -83px;
+            background: none;
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+            border: 0.5px solid $colorBeigeDark;
+            @include lg {
+                width: 25px;
+                height: 25px;
+                min-width: 25px;
+                left: -38px;
+            }
+        }
+    }
+    &-input{
+        display: none;
+        &:checked + .form-check-label:before{
+            background-color: $colorBeigeDark;
         }
     }
 }

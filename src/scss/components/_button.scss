@@ -55,7 +55,7 @@ button{
   text-transform: $uppercase;
   transition: .3s linear;
   min-width: 150px;
-  flex: 1;
+  text-decoration: none;
   @include xl {
     padding: 16px 18px;
     font-size: $font16;
@@ -64,6 +64,7 @@ button{
   &:hover{
     background-color: $colorWhite;
     color: $colorBeigeDark;
+    text-decoration: none;
   }
   &-invert{
     background-color: $colorWhite;

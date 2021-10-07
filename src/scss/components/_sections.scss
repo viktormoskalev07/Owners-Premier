@@ -42,6 +42,7 @@
             bottom: 0;
             left: 0;
             padding: 60px 65px 75px 38px;
+            z-index: 1;
         }
     }
     &-right{
@@ -49,6 +50,7 @@
         align-self: flex-start;
         margin-right: -1.75rem;
         margin-left: -1.75rem;
+        max-width: 150%;
         @include xl {
             width: 100%;
             max-width: 870px;
@@ -295,7 +297,7 @@
         width: 100%;
         margin-bottom: 28px;
         @include lg {
-            max-width: 301px;
+            width: calc(50% - 21px);
             margin-bottom: 33px;
             margin-right: 21px;
         }

@@ -2,6 +2,7 @@
     margin: 30px 0 50px 0;
     @media (max-width: 576px) {
         margin-bottom: 30px;
+        margin-top: 15px;
     }
     a {
         color: #a48242;
@@ -12,6 +13,10 @@
 }
 .detail_slider_section {
     margin: 40px auto 60px;
+    @media (max-width: 576px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .hot_offer {
         background: #ede6d9;
         margin-left: -1px;
@@ -20,17 +25,27 @@
         @media (max-width: 576px) {
             padding: 40px 35px 40px;
         }
+        @media (max-width: 530px) {
+            padding: 40px 20px;
+        }
+        @media (max-width: 380px) {
+            padding: 30px 10px;
+        }
         .price_strong {
             font-size: 50px;
             margin-bottom: 50px;
             @media (max-width: 576px) {
                 font-size: 40px;
+                margin-bottom: 30px;
             }
         }
         p {
             display: flex;
             align-items: center;
             margin-bottom: 30px;
+            @media (max-width: 576px) {
+                margin-bottom: 15px;
+            }
             img {
                 max-width: 30px;
                 margin-right: 25px;
@@ -47,6 +62,12 @@
         .tel {
             font-size: 40px;
             line-height: 1;
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+            @media (max-width: 360px) {
+                font-size: 25px;
+            }
         }
         button {
             background: #a48242;
@@ -55,6 +76,21 @@
             margin: 10px 10px 30px 10px;
             font-size: 16px;
             font-family: 'FuturaHeavy';
+            @media (max-width: 576px) {
+                margin: 10px 10px 20px 0;
+                padding: 10px 15px;
+            }
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+        }
+        button:last-child {
+            @media (max-width: 576px) {
+                margin-right: 0;
+            }
+            @media (max-width: 480px) {
+                margin-top: 0;
+            }
         }
     }
     .marker {
@@ -98,25 +134,43 @@
                 max-height: 440px;
             }
         }
+        @media (max-width: 480px) {
+            max-height: 380px;
+            img {
+                max-height: 380px;
+            }
+        }
+        @media (max-width: 380px) {
+            max-height: 320px;
+            img {
+                max-height: 320px;
+            }
+        }
     }
 }
-.bottom_slider {
+.bottom_slider_wrapper {
     .swiper-slide {
         min-height: initial;
     }
     .bottom-next {
         position: absolute;
-        right: -25px;
+        right: -30px;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+        @media (max-width: 1450px) {
+            right: 0;
+        }
     }
     .bottom-prev {
         position: absolute;
-        left: -25px;
+        left: -30px;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+        @media (max-width: 1450px) {
+            left: 0;
+        }
     }
 }
 .social {
@@ -124,6 +178,9 @@
     a {
         text-decoration: underline;
         padding-left: 50px;
+        @media (max-width: 1450px) {
+            font-size: 1rem;
+        }
     }
     a:hover {
         color: #a48242;
@@ -136,14 +193,48 @@
     a:last-child {
         background: url(../images/icons/envelope.png) no-repeat left;
     }
+    @media (max-width: 768px) {
+        div {
+            flex-direction: column;
+            a:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 .why_buy {
     background: #e7eae9;
     padding: 80px;
     margin-top: 70px;
+    text-align: center;
+    .why_slider {
+        .swiper-slide {
+            min-height: initial;
+            @media (max-width:480px) {
+                padding: 0 10px;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        padding: 50px 30px;
+    }
+    @media (max-width: 768px) {
+        padding: 50px 0px;
+    }
     h2 {
         font-size: 6.875rem;
         margin-bottom: 60px;
+        @media (max-width: 1200px) {
+            font-size: 5.875rem;
+        }
+        @media (max-width: 768px) {
+            padding: 0 15px;
+        }
+        @media (max-width: 576px) {
+            font-size: 3.875rem;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
     }
     img {
         max-width: 110px;
@@ -154,11 +245,18 @@
 }
 .maping {
     margin: 100px auto;
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
     .map_block {
         left: -30px;
         position: relative;
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             left: 0;
+            margin-bottom: 20px;
         }
         div {
             margin-top: 35px;
@@ -170,11 +268,17 @@
     .map_points {
         p:not(:last-child) {
             margin-bottom: 30px;
+            @media (max-width: 480px) {
+                margin-bottom: 15px;
+            }
         }
         p{
             font-size: 22px;
             padding-left: 50px;
             background: url(../images/icons/complete.png) no-repeat left;
+            @media (max-width: 480px) {
+                font-size: 18px;
+            }
         }
         p:last-child {
             margin-bottom: 0;
@@ -191,34 +295,74 @@
                 text-align: center;
             }
             @media (max-width: 768px) {
-                font-size: 4.875rem;
-            }
-            @media (max-width: 768px) {
                 font-size: 3.875rem;
+            }
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            }
+            @media (max-width: 480px) {
+                font-size: 2.5rem;
+            }
+            @media (max-width: 380px) {
+                font-size: 2.2rem;
             }
         }
         span {
             padding:10px 0px 10px 50px;
             background: url(../images/icons/location.png) no-repeat left;
+            @media (max-width: 576px) {
+                font-size: 1rem;
+                line-height: normal;
+            }
+            @media (max-width: 480px) {
+                margin-bottom: 10px;
+            }
         }
     }
     h2 {
         line-height: 0.8;
         margin-bottom: 15px;
+        @media (max-width: 576px) {
+            font-size: 3rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 380px) {
+            font-size: 2.2rem;
+        }
+    }
+    .planner_subtitle{
+        @media (max-width: 576px) {
+            font-size: 1rem;
+            line-height: normal;
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 10px;
+        }
     }
     .prices_block {
         background: #e7eae9;
+        @media (max-width: 480px) {
+            padding: 20px!important;
+        }
     }
     .prices {
         p {
             font-size: 22px;
             display: flex;
+            @media (max-width: 480px) {
+                font-size: 18px;
+            }
             span {
                 max-width: 190px;
                 width: 100%;
             }
             strong {
                 margin-left: 45px;
+                @media (max-width: 380px) {
+                    margin-left: 20px;
+                }
             }
         }
         p:last-child{
@@ -228,26 +372,70 @@
 }
 .key-features {
     margin-bottom: 50px;
+    @media (max-width: 480px) {
+        margin-bottom: 30px;
+    }
+    .features_left, .features_right {
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
     .key-parrent {
         background: #ede6d9;
         h2 {
             line-height: normal;
             margin-bottom: 0;
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+        .features_subtitle {
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+            }
+        }
+        padding: 60px;
+        @media (max-width: 1200px) {
+            padding: 30px 0 30px 30px;
+        }
+        @media (max-width: 768px) {
+            padding: 20px 0 20px 15px;
+        }
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+    .features-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .swiper-slide {
+        min-height: auto;
+    }
+    .swiper-wrapper {
+        align-items: baseline;
+        padding-bottom: 15px;
+    }
+    .features-next {
+        display: none;
+        @media (max-width: 1200px) {
+            display: block;
         }
     }
     .key-item {
         font-size: 12px;
-        max-width: 100px;
         text-align: center;
         line-height: normal;
+        span {
+            max-width: 100px;
+        }
         img {
             max-height: 90px;
             object-fit: contain;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
-    }
-    .key-item:not(:first-child) {
-        margin-left: 40px;
     }
 }
 .detail {
@@ -262,6 +450,9 @@
         }
         @media (max-width: 480px) {
             font-size: 3.875rem;
+        }
+        @media (max-width: 380px) {
+            font-size: 3rem;
         }
     }
     .detail_header {
@@ -278,9 +469,35 @@
 }
 .all_in_detail {
     margin-bottom: 50px;
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
     h2{
         margin-bottom: 0;
         line-height: normal;
+        @media (max-width: 576px) {
+            font-size: 3rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 380px) {
+            font-size: 2.2rem;
+        }
+    }
+    span {
+        @media (max-width: 576px) {
+            font-size: 1rem;
+            line-height: normal;
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 10px;
+        }
+    }
+    div {
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
     }
 }
 .coming_button {
@@ -291,4 +508,15 @@
     padding: 5px 10px;
     font-size: 14px;
     color: #002b49;
+}
+@media (max-width: 768px) {
+    .why_buy .container-fluid {
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .back_block .container-fluid, .detail .container-fluid, .detail_slider_section .container-fluid, .all_in_detail .container-fluid, .key-features .container-fluid, .finance_planner .container-fluid, .brilliant-holiday .container-fluid, .maping .container-fluid, .bottom_slider_wrapper .container-fluid, .social .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

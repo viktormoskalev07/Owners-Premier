@@ -16,6 +16,13 @@
 .col-12{
   flex: auto
 }
+.col{
+  &-lg-auto{
+    @include lg {
+      flex: 0 1 auto;
+    }
+  }
+}
 .w{
   &-auto{
     width: auto!important;

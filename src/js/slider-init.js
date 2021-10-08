@@ -3,6 +3,7 @@ let HeroSwiper = new Swiper(".HeroSwiper", {
     spaceBetween: 0,
     loop:true,
     grabCursor:'true',
+    lazy: true,
     navigation: {
         nextEl: '.hero-next',
         prevEl: '.hero-prev',

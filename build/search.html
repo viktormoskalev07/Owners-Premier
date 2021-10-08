@@ -78,198 +78,248 @@
 </header> 
 
 <main class="main">
-<section class="hero">
-    <div class="container-fluid">
-        <div class="swiper HeroSwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="./images/home_page/banner.jpg" class="d-block swiper-lazy" alt="..." loading="lazy">
+    <section class="search_form">
+    <div class="container-fluid d-flex flex-column align-items-center">
+        <p>Find your next dream holiday home</p>
+        <div class="search_form_parent">
+            <form action="#" class="d-flex">
+                <select class="form-select d-none d-lg-block" name="search_form" id="budget">
+                    <option selected>BUDGET</option>
+                    <option value="0">TITLE1</option>
+                    <option value="1">TITLE2</option>
+                </select>
+                <select class="form-select d-none d-lg-block" name="search_form" id="condition">
+                    <option selected>CONDITION</option>
+                    <option value="0">TITLE1</option>
+                    <option value="1">TITLE2</option>
+                </select>
+                <select class="form-select d-none d-lg-block" name="search_form" id="number">
+                    <option selected>NUMBER OF BEDROOMS</option>
+                    <option value="0">TITLE1</option>
+                    <option value="1">TITLE2</option>
+                </select>
+                <button class="mobile_filter color-beige d-block d-lg-none">filter by BUDGET, CONDITION, BEDROOMS</button>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="button">find holiday homes</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="swiper-slide">
-      <img src="./images/home_page/banner.jpg" class="d-block swiper-lazy" alt="..." loading="lazy">
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/home_page/banner.jpg" class="d-block swiper-lazy" alt="..." loading="lazy">
-    </div>
-  </div>
-  
-</div>
-<div class="d-none d-sm-block btn-next hero-next"></div>
-<div class="d-none d-sm-block btn-prev hero-prev"></div>
-        <div class="hero-bottom position-relative">
-            <div class="hero-left bg-white">
-                <h1>relax and enjoy<span class="color-beige">...</span></h1>
-                <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title">All the benefits of holiday home ownership</span>
-                <a href="#" class="button">Find out more</a>
-            </div>
-            <div class="hero-right find-your-next col-12 col-xl-8 offset-xl-4">
-                <div class="bg-beige hero-text pb-4 pb-xl-0">
-    <p class="fs-22 text-center text-uppercase color-text mb-0 sub-title">Find your next dream holiday home</p>
-</div>
-<div class="bg-beige w-100 hero-form text-center">
-    <button class="d-xl-none button" type="button" data-toggle="collapse" data-target="#collapsesearch" aria-expanded="false" aria-controls="collapsesearch">
-        Begin your search
-    </button>
-    <div class="collapse d-xl-block mt-5 mt-xl-0" id="collapsesearch">
-        <form action="#" class="d-flex flex-column flex-xl-row justify-content-between">
-            <select class="form-select mr-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="budget">
-                <option selected>budget</option>
-                <option value="0">budget1</option>
-                <option value="1">budget2</option>
-                <option value="2">budget3</option>
-                <option value="3">budget4</option>
-                <option value="4">budget5</option>
+</section>
+    <section class="search_results">
+    <div class="container-fluid d-flex align-items-center justify-content-end justify-content-md-between">
+        <p><span class="color-beige">5</span>results</p>
+        <form action="#">
+            <select class="form-select" name="search_form" id="budget1">
+                <option selected>Priece low to hight</option>
+                <option value="0">TITLE1</option>
+                <option value="1">TITLE2</option>
             </select>
-            <select class="form-select mr-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="condition">
-                <option selected>condition</option>
-                <option value="0">condition1</option>
-                <option value="1">condition2</option>
-                <option value="2">condition3</option>
-                <option value="3">condition4</option>
-                <option value="4">condition5</option>
-            </select>
-            <select class="form-select mr-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="numderofbedrooms">
-                <option selected>numder of bedrooms</option>
-                <option value="0">1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-            </select>
-            <button type="submit" class="button">Find holiday homes</button>
         </form>
     </div>
-</div>
-            </div>
-        </div>
-    </div>
 </section>
-
-<section class="brilliant-holiday">
-    <div class="container-fluid d-flex justify-content-between align-items-start flex-wrap">
-        <div class="img-block position-relative">
-            <img src="./images/home_page/Caravans_on_park.jpg" alt="" class="w-100" loading="lazy">
-            <div class="img-absolute">
-                <img src="./images/home_page/Kid_on_beach_0.jpg" alt="" loading="lazy">
-            </div>
-        </div>
-        <div class="brilliant-holiday-text justify-content-between d-flex flex-column align-items-start">
-            <h2>brilliant holidays<span class="color-beige">,</span></h2>
-            <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title sub-title--m">All the benefits of holiday home ownership</span>
-            <div class="text-block">
-                <p class="mb-4">Welcome to Brean Leisure Resort! A family of 4 individual holiday parks, each with their own unique personality, situated on the Somerset Coast.  Whether you are looking for full on family fun, spectacular coastal views or a place to relax with loved ones - you will find Brean Leisure Resort meets your requirements.</p>
-                <p class="mb-0">If you’ve always dreamed of owning your own holiday home, and escaping the day to day whenever you want, Brean Leisure Resort can make your dreams come true.</p>
-            </div>
-            <a href="#" class="button align-self-center align-self-lg-start">Find out more</a>
-        </div>
-        
-    </div>
-</section>
-
-<section class="sing-up bg-text bg-pattern">
+    <section class="search_results_item">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="d-flex align-items-center col-12 col-xl-7 color-white flex-wrap flex-column flex-xl-row text-center mb-3 mb-lg-0">
-                <h2 class="mr-xl-3">sign up<span class="color-beige">...</span></h2>
-                <span class="color-white text-uppercase fs-22 d-block sub-title d-block">to get exclusive news and deals</span>
+        <div class="row results_item featured">
+            <div class="col-12 col-lg-4">
+                <div class="featured_wrappper position-relative">
+                    <div class="search_slider position-relative swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <img src="images/home-details/detail_slider1.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <img src="images/home-details/detail_slider1.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-next search_next"></div>
+                        <div class="btn-prev search_prev"></div>
+                    </div>
+                    <div class="featured_icon">
+                        <img src="images/featured.png" alt="featured">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-xl-5">
-                <form action="#" class="d-flex justify-content-center flex-wrap flex-sm-nowrap">
-                    <input type="email" class="form-control mr-sm-4" placeholder="YOUR EMAIL ADDRESS">
-                    <button type="submit" class="button mt-3 mt-sm-0">sign up</button>
-                </form>
+            <div class="col-12 col-lg-8 results_item_description d-flex flex-column justify-content-between standart_item">
+                <a href="#" class="color-mutegreen d-block result_items_title">prestige homeseeker plantation</a>
+                <div class="d-flex align-items-center descriptiopn_wrapper">
+                    <div>
+                        <button class="coming_button">ready to view</button>
+                        <p class="description_text">The all new Plantation House: think cosy hygge décor. This home introduces natural textures, refreshing white cottons complimenting every room, simply stylish; a holiday home where you won’t want to leave its...</p>
+                    </div>
+                    <div class="description_options color-mutegreen">
+                        <p><img src="images/home-details/event_green.png" alt="images"><strong>2021</strong>(Brand new model)</p>
+                        <p><img src="images/home-details/bed_green.png" alt="images"><strong>2 Bedrooms</strong> (Sleeps 4)</p>
+                        <p><img src="images/home-details/resize_green.png" alt="images"><strong>40ft x 20ft</strong></p>
+                    </div>
+                </div>
+                <div class="show_items d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <strong class="color-mutegreen">£185,000</strong>
+                        <a href="#" class="color-mutegreen">finance options available</a>
+                    </div>
+                    <button class="button featured">more details</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="why-choose">
-    <div class="container-fluid">
-        <div class="row align-items-start">
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 text-center text-sm-left">
-                <h2>why choose</h2>
-                <span class="color-beige text-uppercase fs-22 d-block sub-title mb-30">Brean Leisure Resort</span>
-                <a href="#" class="button align-self-center align-self-lg-start d-inline-block">Find out more</a>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-8 col-xl-9 d-flex why-choose-items flex-wrap position-relative">
-                <div class="swiper ChooseSwiper">
+        <div class="row results_item">
+            <div class="col-12 col-lg-4">
+                <div class="search_slider position-relative swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/coast.png" alt="" loading="lazy">
-                            <span>Stunning Coastal <br> Location</span>
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/suitcase.png" alt="" loading="lazy">
-                            <span>holidays all <br> year round</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/friends.png" alt="" loading="lazy">
-                            <span>friends <br> for life</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/fast-food.png" alt="" loading="lazy">
-                            <span>food & drink with <br> owner discount</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/disabillity-symbol.png" alt="" loading="lazy">
-                            <span>easily <br> accessible</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="why-choose-item">
-                            <img src="./images/icons/family.png" alt="" loading="lazy">
-                            <span>family (and pet)<br> friendly</span>
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
                         </div>
                     </div>
+                    <div class="btn-next search_next"></div>
+                    <div class="btn-prev search_prev"></div>
                 </div>
-                
             </div>
-            <div class="btn-next choose-next"></div>
-            <div class="btn-prev choose-prev"></div>
+            <div class="col-12 col-lg-8 results_item_description d-flex flex-column justify-content-between standart_item">
+                <a href="#" class="color-beige d-block result_items_title">tingdene harrington</a>
+                <div class="d-flex align-items-center descriptiopn_wrapper">
+                    <div>
+                        <button class="coming_button">coming soon</button>
+                        <p class="description_text">The all new Plantation House: think cosy hygge décor. This home introduces natural textures, refreshing white cottons complimenting every room, simply stylish; a holiday home where you won’t want to leave its...</p>
+                    </div>
+                    <div class="description_options color-beige">
+                        <p><img src="images/home-details/event.png" alt="images"><strong>2021</strong>(Brand new model)</p>
+                        <p><img src="images/home-details/bed.png" alt="images"><strong>2 Bedrooms</strong> (Sleeps 4)</p>
+                        <p><img src="images/home-details/resize.png" alt="images"><strong>40ft x 20ft</strong></p>
+                    </div>
+                </div>
+                <div class="show_items d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <strong class="color-beige">£185,000</strong>
+                        <a href="#">finance options available</a>
+                    </div>
+                    <button class="button">more details</button>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-</section>
-
-<section class="endless-holiday mb-5">
-    <div class="container-fluid">
-        <div class="d-flex flex-wrap flex-column flex-lg-row">
-            <div class="col-12 col-lg-7 img-block position-relative order-2 order-lg-1">
-                <img src="./images/home_page/endless_holidays1.jpg" alt="" class="w-100 h-100" loading="lazy">
-                <a href="#" class="btn-next position-absolute bottom-0 left-0"></a>
-            </div>
-            <div class="col-12 col-lg-5 py-lg-5 order-1 order-lg-2">
-                <div class="endless-holiday-text bg-beige p-4 p-sm-5 pr-3 d-flex flex-column h-100 justify-content-center">
-                    <h2 class="mb-3">endless holidays</h2>
-                    <span class="color-beige text-uppercase fs-22 mb-3 d-block sub-title">CHOOSE YOUR HOME FROM HOME</span>
-                    <div class="text-block">
-                        <p class="mb-4">In our multi award winning Resort, so you can relax, unwind and enjoy your downtime, whenever you please.</p>
-                        <p class="mb-0">You’re just a drive away from your new Happy Place.</p>
+        <div class="row results_item">
+            <div class="col-12 col-lg-4">
+                <div class="search_slider position-relative swiper-container sold">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="btn-next search_next"></div>
+                    <div class="btn-prev search_prev"></div>
+                    <div class="sold_icon">
+                        <img src="images/sold.png" alt="sold">
                     </div>
                 </div>
             </div>
-           
-            <div class="col-12 img-absolute d-flex order-3 align-items-start mb-5">
-                <div class="mt-sm-5 mr-sm-4 mb-sm-0 ml-sm-5 py-sm-4 pl-sm-5">
-                    <img src="./images/home_page/endless_holidays3.jpg" alt="" loading="lazy">
+            <div class="col-12 col-lg-8 results_item_description d-flex flex-column justify-content-between standart_item">
+                <a href="#" class="color-beige d-block result_items_title">ABI ambleside premier</a>
+                <div class="d-flex align-items-center descriptiopn_wrapper">
+                    <div>
+                        <button class="coming_button">coming soon</button>
+                        <p class="description_text">The all new Plantation House: think cosy hygge décor. This home introduces natural textures, refreshing white cottons complimenting every room, simply stylish; a holiday home where you won’t want to leave its...</p>
+                    </div>
+                    <div class="description_options color-beige">
+                        <p><img src="images/home-details/event.png" alt="images"><strong>2021</strong>(Brand new model)</p>
+                        <p><img src="images/home-details/bed.png" alt="images"><strong>2 Bedrooms</strong> (Sleeps 4)</p>
+                        <p><img src="images/home-details/resize.png" alt="images"><strong>40ft x 20ft</strong></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/home_page/endless_holidays2.jpg" alt="" loading="lazy">
+                <div class="show_items d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <strong class="color-beige">£84,995</strong>
+                        <a href="#">finance options available</a>
+                    </div>
+                    <button class="button sold">sold</button>
                 </div>
-                
+            </div>
+        </div>
+        <div class="row results_item">
+            <div class="col-12 col-lg-4">
+                <div class="search_slider position-relative swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="btn-next search_next"></div>
+                    <div class="btn-prev search_prev"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 results_item_description d-flex flex-column justify-content-between standart_item">
+                <a href="#" class="color-beige d-block result_items_title">pemberton arrondale</a>
+                <div class="d-flex align-items-center descriptiopn_wrapper">
+                    <div>
+                        <button class="coming_button">coming soon</button>
+                        <p class="description_text">The all new Plantation House: think cosy hygge décor. This home introduces natural textures, refreshing white cottons complimenting every room, simply stylish; a holiday home where you won’t want to leave its...</p>
+                    </div>
+                    <div class="description_options color-beige">
+                        <p><img src="images/home-details/event.png" alt="images"><strong>2021</strong>(Brand new model)</p>
+                        <p><img src="images/home-details/bed.png" alt="images"><strong>2 Bedrooms</strong> (Sleeps 4)</p>
+                        <p><img src="images/home-details/resize.png" alt="images"><strong>40ft x 20ft</strong></p>
+                    </div>
+                </div>
+                <div class="show_items d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <strong class="color-beige">£185,000</strong>
+                        <a href="#">finance options available</a>
+                    </div>
+                    <button class="button">more details</button>
+                </div>
+            </div>
+        </div>
+        <div class="row results_item">
+            <div class="col-12 col-lg-4">
+                <div class="search_slider position-relative swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/home-details/detail_slider1.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="btn-next search_next"></div>
+                    <div class="btn-prev search_prev"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 results_item_description d-flex flex-column justify-content-between standart_item">
+                <a href="#" class="color-beige d-block result_items_title">willbery manor</a>
+                <div class="d-flex align-items-center descriptiopn_wrapper">
+                    <div>
+                        <button class="coming_button">coming soon</button>
+                        <p class="description_text">The all new Plantation House: think cosy hygge décor. This home introduces natural textures, refreshing white cottons complimenting every room, simply stylish; a holiday home where you won’t want to leave its...</p>
+                    </div>
+                    <div class="description_options color-beige">
+                        <p><img src="images/home-details/event.png" alt="images"><strong>2021</strong>(Brand new model)</p>
+                        <p><img src="images/home-details/bed.png" alt="images"><strong>2 Bedrooms</strong> (Sleeps 4)</p>
+                        <p><img src="images/home-details/resize.png" alt="images"><strong>40ft x 20ft</strong></p>
+                    </div>
+                </div>
+                <div class="show_items d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <strong class="color-beige">£52,995</strong>
+                        <a href="#">finance options available</a>
+                    </div>
+                    <button class="button">more details</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<section class="arrange_a_visit bg-beigeDark bg-pattern">
+    <section class="arrange_a_visit bg-beigeDark bg-pattern">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 col-xl-4 color-white text-center text-lg-left mb-3 mb-xl-0 p-0">
@@ -286,8 +336,7 @@
         </div>
     </div>
 </section>
-
-<section class="get-in-touch">
+    <section class="get-in-touch">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6 text-center text-lg-left">
@@ -368,9 +417,7 @@
         </div>
     </div>
 </section>
-
 </main>
-
 <footer class="footer">
     <div class="footer-top bg-text ">
         <div class="container-fluid">
@@ -435,8 +482,7 @@
 <script >
     const templateUrl = '<?php= get_bloginfo("template_url"); ?>';
  </script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script defer src="js/swiper-min.js"> </script>
 <script defer src="js/main.js"> </script>
 </body>

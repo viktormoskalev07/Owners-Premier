@@ -6,7 +6,11 @@ let HeroSwiper = new Swiper(".HeroSwiper", {
     navigation: {
         nextEl: '.hero-next',
         prevEl: '.hero-prev',
-      }
+      },
+      keyboard: {
+        enabled: 'true',
+        onlyInViewport: 'true',
+      },
   });
 let bottomSlider = new Swiper('.bottom_slider', {
     slidesPerView: 1,
@@ -29,7 +33,11 @@ let bottomSlider = new Swiper('.bottom_slider', {
         993: {
           slidesPerView: 4,
         },
-      }
+      },
+      keyboard: {
+        enabled: 'true',
+        onlyInViewport: 'true',
+      },
 });
 let detailSlider = new Swiper('.detail_slider', {
     slidesPerView: 1,
@@ -39,7 +47,11 @@ let detailSlider = new Swiper('.detail_slider', {
     navigation: {
         nextEl: '.detail-next',
         prevEl: '.detail-prev',
-    }
+    },
+    keyboard: {
+      enabled: 'true',
+      onlyInViewport: 'true',
+    },
 });
 let whySlider = new Swiper('.why_slider', {
     slidesPerView: 1,
@@ -57,7 +69,11 @@ let whySlider = new Swiper('.why_slider', {
           993: {
             slidesPerView: 3,
           },
-      }
+      },
+      keyboard: {
+        enabled: 'true',
+        onlyInViewport: 'true',
+      },
 });
 let featuresSlider = new Swiper('.features_slider', {
     slidesPerView: 2,
@@ -81,7 +97,11 @@ let featuresSlider = new Swiper('.features_slider', {
         1201: {
             slidesPerView: 6,
           },
-      }
+      },
+      keyboard: {
+        enabled: 'true',
+        onlyInViewport: 'true',
+      },
 });
 let ChooseSwiper = new Swiper(".ChooseSwiper", {
     spaceBetween: 0,
@@ -110,6 +130,10 @@ let ChooseSwiper = new Swiper(".ChooseSwiper", {
           slidesPerView: 6,
         },
     },
+    keyboard: {
+      enabled: 'true',
+      onlyInViewport: 'true',
+    },
 });
 let searchSlider = new Swiper('.search_slider', {
   loop: true, 
@@ -119,4 +143,8 @@ let searchSlider = new Swiper('.search_slider', {
     nextEl: '.search_next',
     prevEl: '.search_prev',
 },
+  keyboard: {
+    enabled: 'true',
+    onlyInViewport: 'true',
+  },
 });

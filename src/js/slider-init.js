@@ -114,6 +114,7 @@ let ChooseSwiper = new Swiper(".ChooseSwiper", {
 let searchSlider = new Swiper('.search_slider', {
   loop: true, 
   slidesPerView: 1,
+  autoHeight: true,
   navigation: {
     nextEl: '.search_next',
     prevEl: '.search_prev',

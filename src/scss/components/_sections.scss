@@ -12,6 +12,11 @@
 .text-block{
     line-height: 26px;
 }
+.find-your-next{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .hero{
     position: relative;
     &-bottom{
@@ -37,16 +42,15 @@
             bottom: 0;
             left: 0;
             padding: 60px 65px 75px 38px;
+            z-index: 1;
         }
     }
     &-right{
         width: calc(100% + 3.4rem);
         align-self: flex-start;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
         margin-right: -1.75rem;
         margin-left: -1.75rem;
+        max-width: 150%;
         @include xl {
             width: 100%;
             max-width: 870px;
@@ -56,7 +60,7 @@
     }
     &-text{
         width: 100%;
-        padding-top: 25px;
+        padding-top: 23px;
         @include xl {
             padding-top: 45px;
             margin-bottom: -12px;
@@ -68,9 +72,12 @@
         }
     }
     &-form{
-        padding: 40px 35px 35px;
+        padding: 20px 20px 24px;
         position: relative;
         z-index: 2;
+        @include xl{
+            padding: 40px 35px 35px;
+        }
         form{
             margin-top: 1.5rem;
             @include xl {margin-top: 0;}
@@ -78,13 +85,38 @@
     }
 }
 .brilliant-holiday{
-    padding: 55px 0 45px;
-    @include lg{padding: 100px 0;}
+    padding: 55px 0 42px;
+    @include lg{padding: 101px 0 106px;}
+    &-text{
+        flex: 1;
+        padding: 0 5px;
+        @include lg{
+            padding: 0 50px 0 13px;
+        }
+    }
+    .button{
+        margin-right: 37px;
+        @include lg{
+            margin-left: 2px;
+        }
+    }
+    .text-block{
+        padding: 0 0 0 7px;
+        margin-bottom: 36px;
+        @include lg{
+            margin-bottom: 43px;
+        }
+    }
     .img{
         &-block{
-            margin-bottom: 230px;
+            width: 100%;
+            margin-bottom: 186px;
+            padding:  0 32px;
+            &>img{max-height: 400px;}
             @include lg{
                 left: -30px;
+                padding: 0;
+                width: 615px;
                 margin-bottom: 0;
             }
         }
@@ -95,9 +127,200 @@
             max-width: 333px;
             bottom: -170px;
             @include lg{
-                bottom: -160px;
+                bottom: -167px;
                 right: 55px;
             }
         }
+    }
+}
+.sing-up{
+    padding: 12px 18px 38px;
+    @include xl{
+        padding: 85px 50px 55px 60px;
+    }
+    h2{
+        margin-right: 26px;
+        @include xl{margin-right: 35px;}
+    }
+    .sub-title{
+        margin-top: 4px;
+        margin-bottom: 25px;
+        @include xl{
+            margin-top: 17px;
+            margin-bottom: 0;
+        }
+    }
+    .form-control{
+        margin-right: 17px;
+        @include xl{margin-right: 15px;}
+    }
+    form{
+        @include xl{
+            padding-top: 20px;
+            padding-left: 25px;
+        } 
+    }
+}
+.why-choose{
+    padding: 34px 0 87px;
+    h2{min-width: 300px;}
+    @include lg{
+        padding: 127px 0 128px;
+        .container-fluid{
+            padding-left: 48px;
+        }
+        .sub-title{
+            margin-bottom: 30px;
+            padding: 0 5px;
+        }
+    }
+    &-items{
+        justify-content: flex-end;
+        margin-top: 50px;
+        @include sm {
+            padding-left: 50px;
+            margin-top: 0;
+        }
+        @include xl{
+            padding-top: 8px;
+            padding-left: 20px;
+        }
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 11px;
+        line-height: 14px;
+        color: $colorBeigeDark;
+        text-transform: $uppercase;
+        span{
+            display: block;
+            margin-top: 29px;
+            letter-spacing: 2px;
+        }
+    }
+}
+.endless-holiday{
+    .sub-title{
+        margin-bottom: 30px;
+        @include xl{margin-bottom: 21px;}
+    }
+    &-text{
+        padding: 16px 27px 41px;
+        @include xl{
+            justify-content: center;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            width: 574px;
+            height: 447px;
+            padding: 0 40px 0 51px;
+            margin-left: -11px;
+        }
+    }
+    .text-block{
+        padding: 0 5px;
+        @include xl{padding: 0;}
+    }
+    .img-block{
+        flex: 1;
+        margin-bottom: 50px;
+        @include sm{ margin-bottom: 278px;}
+        @include xl{margin-bottom: 335px;}
+    }
+    .img-absolute{
+        display: none;
+        @include sm{
+            position: absolute;
+            top: calc(100% - 49px);
+            left: -1.313rem;
+            width: calc(100% + 2.626rem);
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            z-index: -1;
+        }
+        @include xl{
+            min-width: 922px;
+            left: 0;
+            justify-content: flex-end;
+        }
+        img{
+            &:first-child{
+                padding: 74px 30px 0 0
+            }
+        }
+    }
+}
+.arrange_a_visit{
+    padding: 19px 20px 38px;
+    @include lg {
+        padding: 38px 61px 59px
+    }
+    .text-block{
+        @include lg{
+            padding: 30px 70px 0 17px
+        }
+    }
+}
+.get-in-touch{
+    padding: 28px 0;
+    @include lg {
+        padding: 42px 53px 0;
+    }
+    form{
+        padding: 54px 0 0;
+        &>.col{
+            width: 100%;
+            max-width: 505px;
+            margin: 0 auto;
+            @include lg{
+                max-width: 100%;
+            }
+        }
+        @include sm {
+            padding: 54px 0 0;
+        }
+        @include lg {
+            padding: 28px 8px 0 15px;
+        } 
+    }
+    .sub-title{
+        margin-top: 4px;
+        padding: 0 3px;
+        margin-bottom: 27px;
+    }
+    input.form-control, 
+    select.form-select{
+        width: 100%;
+        margin-bottom: 28px;
+        @include lg {
+            width: calc(50% - 21px);
+            margin-bottom: 33px;
+            margin-right: 21px;
+        }
+    }
+    textarea{
+        width: 100%;
+        max-width: 636px;
+        min-height: 307px;
+        margin-bottom: 24px;
+        @include lg {
+            margin-bottom: 33px;
+            min-height: 100px;
+        }
+    }
+    .form-check{
+        width: 200px;
+        @include lg {
+            width: auto;
+            margin-right: 34.5px!important;
+        }
+    }
+    .button[type="submit"]{
+        margin: 15px 15px 0 0;
+        @include lg {margin: 5px 28px 0 0; }
     }
 }

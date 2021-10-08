@@ -7,45 +7,11 @@
             <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title">All the benefits of holiday home ownership</span>
             <a href="#" class="button">Find out more</a>
         </div>
-        <div class="hero-right col-12 col-xl-8 offset-xl-4">
-            <div class="bg-beige hero-text">
-                <p class="fs-22 text-center text-uppercase color-text mb-0 sub-title">Find your next dream holiday home</p>
-            </div>
-            <div class="bg-beige w-100 hero-form text-center">
-                <button class="d-xl-none button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Begin your search
-                </button>
-                <div class="collapse d-xl-block" id="collapseExample">
-                    <form action="#" class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
-                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="budget">
-                            <option selected>budget</option>
-                            <option value="0">budget1</option>
-                            <option value="1">budget2</option>
-                            <option value="2">budget3</option>
-                            <option value="3">budget4</option>
-                            <option value="4">budget5</option>
-                        </select>
-                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="condition">
-                            <option selected>condition</option>
-                            <option value="0">condition1</option>
-                            <option value="1">condition2</option>
-                            <option value="2">condition3</option>
-                            <option value="3">condition4</option>
-                            <option value="4">condition5</option>
-                        </select>
-                        <select class="form-select me-xl-3 d-block w-100 w-xl-auto mb-30 mb-xl-0" name="holidayhome" id="numderofbedrooms">
-                            <option selected>numder of bedrooms</option>
-                            <option value="0">1</option>
-                            <option value="1">2</option>
-                            <option value="2">3</option>
-                        </select>
-                        <button type="submit" class="button">Find holiday homes</button>
-                    </form>
-                </div>
-            </div>
-            
-            
-            
+        <div class="hero-right find-your-next col-12 col-xl-8 offset-xl-4 p-0">
+            @@include("find-your-next.html", {
+                classText: 'hero-text',
+                classForm: 'hero-form',
+            })
         </div>
     </div>
 </div>

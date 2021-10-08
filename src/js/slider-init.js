@@ -1,4 +1,4 @@
-let swiper = new Swiper(".HeroSwiper", {
+let HeroSwiper = new Swiper(".HeroSwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop:true,
@@ -35,6 +35,7 @@ let detailSlider = new Swiper('.detail_slider', {
     slidesPerView: 1,
     autoHeight: true,
     spaceBetween: 1,
+    loop: true,
     navigation: {
         nextEl: '.detail-next',
         prevEl: '.detail-prev',
@@ -81,4 +82,40 @@ let featuresSlider = new Swiper('.features_slider', {
             slidesPerView: 6,
           },
       }
+});
+let ChooseSwiper = new Swiper(".ChooseSwiper", {
+    spaceBetween: 0,
+    loop: true,
+    grabCursor:'true',
+    centeredSlides: false,
+    navigation: {
+        nextEl: '.choose-next',
+        prevEl: '.choose-prev',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 1.8,
+          
+        },
+        768: {
+            slidesPerView: 2.5,
+        },
+        991: {
+          slidesPerView: 4,
+        },
+        1440: {
+          slidesPerView: 6,
+        },
+    },
+});
+let searchSlider = new Swiper('.search_slider', {
+  loop: true, 
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.search_next',
+    prevEl: '.search_prev',
+},
 });

@@ -18,6 +18,7 @@ let bottomSlider = new Swiper('.bottom_slider', {
     autoHeight: true,
     spaceBetween: 20,
     loop: true,
+    lazy: true,
     navigation: {
         nextEl: '.bottom-next',
         prevEl: '.bottom-prev',
@@ -45,6 +46,7 @@ let detailSlider = new Swiper('.detail_slider', {
     autoHeight: true,
     spaceBetween: 1,
     loop: true,
+    lazy: true,
     navigation: {
         nextEl: '.detail-next',
         prevEl: '.detail-prev',
@@ -161,6 +163,7 @@ let searchSlider = new Swiper('.search_slider', {
   loop: true, 
   slidesPerView: 1,
   autoHeight: true,
+  lazy: true,
   navigation: {
     nextEl: '.search_next',
     prevEl: '.search_prev',

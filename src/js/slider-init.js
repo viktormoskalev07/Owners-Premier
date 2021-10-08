@@ -47,10 +47,7 @@ let IncludedSwiper = new Swiper(".IncludedSwiper", {
   },
   breakpoints: {
       0: {
-        slidesPerView: 3,
-      },
-      576: {
-          slidesPerView: 1.8,
+        slidesPerView: 2,
       },
       768: {
           slidesPerView: 2.5,

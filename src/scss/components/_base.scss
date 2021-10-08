@@ -48,14 +48,15 @@ h1,h2,h3,h4{
 }
 
 h1{
-  font-size: 3.875rem;
+  font-size: 2.875rem;
+  line-height: 2.875rem;
   margin-bottom: 18px;
   @include sm{
     font-size: 6.875rem;
   }
 }
 
-h2, h3{
+h2{
   font-size: 2rem;
   line-height: 2.2rem;
   @include sm{
@@ -87,13 +88,8 @@ figure{
 
 .sub-title{
   letter-spacing: 4px;
-  line-height: 1.875rem;
+  line-height: 1.5rem;
   word-spacing: 2px;
-  &--m{
-    margin-top: -11px;
-    padding: 0 5px;
-    margin-bottom: 21px;
-  }
 }
 
 img {

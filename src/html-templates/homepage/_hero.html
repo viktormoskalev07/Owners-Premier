@@ -1,18 +1,18 @@
 <section class="hero">
-<div class="container-fluid">
-    @@include("banner.html")
-    <div class="hero-bottom position-relative">
-        <div class="hero-left bg-white">
-            <h1>relax and enjoy<span class="color-beige">...</span></h1>
-            <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title">All the benefits of holiday home ownership</span>
-            <a href="#" class="button">Find out more</a>
-        </div>
-        <div class="hero-right find-your-next col-12 col-xl-8 offset-xl-4 p-0">
-            @@include("find-your-next.html", {
-                classText: 'hero-text',
-                classForm: 'hero-form',
-            })
+    <div class="container-fluid">
+        @@include("banner.html")
+        <div class="hero-bottom position-relative">
+            <div class="hero-left bg-white">
+                <h1>relax and enjoy<span class="color-beige">...</span></h1>
+                <span class="color-beige text-uppercase fs-22 mb-30 d-block sub-title">All the benefits of holiday home ownership</span>
+                <a href="#" class="button">Find out more</a>
+            </div>
+            <div class="hero-right find-your-next col-12 col-xl-8 offset-xl-4">
+                @@include("find-your-next.html", {
+                    classText: 'hero-text pb-4 pb-xl-0',
+                    classForm: 'hero-form',
+                })
+            </div>
         </div>
     </div>
-</div>
 </section>

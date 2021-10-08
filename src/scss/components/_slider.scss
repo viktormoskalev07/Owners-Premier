@@ -15,7 +15,10 @@
 }
 .HeroSwiper{
     .swiper-slide{
-        min-height: 555px;
+        min-height: 200px;
+        @include sm {
+            min-height: 555px;
+        }
         @include xl{
             min-height: 480px;
         }

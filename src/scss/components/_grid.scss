@@ -16,3 +16,23 @@
 .col-12{
   flex: auto
 }
+.w{
+  &-auto{
+    width: auto!important;
+  }
+  &-sm-auto{
+    @include sm {
+      width: auto!important;
+    }
+  }
+  &-lg-auto{
+    @include lg {
+      width: auto!important;
+    }
+  }
+  &-xl-auto{
+    @include xl {
+      width: auto!important;
+    }
+  }
+}

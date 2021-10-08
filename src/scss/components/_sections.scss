@@ -22,8 +22,10 @@
     &-bottom{
         display: flex;
         flex-direction: column;
-        z-index: 1;
-        margin-top: -260px;
+        @include sm{
+            z-index: 1;
+            margin-top: -260px;
+        }
         @include xl {
             justify-content: flex-end;
             flex-direction: row;
@@ -32,11 +34,14 @@
     }
     &-left{
         width: 100%;
-        max-width: 568px;
-        padding: 60px 65px 68px 38px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px 0;
+        @include sm {
+            max-width: 568px;
+            padding: 60px 65px 68px 38px;
+        }
         @include xl {
             position: absolute;
             bottom: 0;
@@ -60,9 +65,9 @@
     }
     &-text{
         width: 100%;
-        padding-top: 23px;
+        padding: 44px 35px 0;
         @include xl {
-            padding-top: 45px;
+            padding: 45px 0 0;
             margin-bottom: -12px;
             width: calc(100% - 58px);
         }
@@ -72,32 +77,25 @@
         }
     }
     &-form{
-        padding: 20px 20px 24px;
+        padding: 0 35px 36px;
         position: relative;
         z-index: 2;
         @include xl{
             padding: 40px 35px 35px;
-        }
-        form{
-            margin-top: 1.5rem;
-            @include xl {margin-top: 0;}
         }
     }
 }
 .brilliant-holiday{
     padding: 55px 0 42px;
     @include lg{padding: 101px 0 106px;}
+    h2{
+        margin-bottom: 20px;
+    }
     &-text{
         flex: 1;
         padding: 0 5px;
         @include lg{
             padding: 0 50px 0 13px;
-        }
-    }
-    .button{
-        margin-right: 37px;
-        @include lg{
-            margin-left: 2px;
         }
     }
     .text-block{
@@ -110,9 +108,11 @@
     .img{
         &-block{
             width: 100%;
-            margin-bottom: 186px;
-            padding:  0 32px;
             &>img{max-height: 400px;}
+            @include sm {
+                padding:  0 32px;
+                margin-bottom: 186px;
+            }
             @include lg{
                 left: -30px;
                 padding: 0;
@@ -121,11 +121,14 @@
             }
         }
         &-absolute{
-            position: absolute;
-            right: 85px;
             width: 100%;
-            max-width: 333px;
-            bottom: -170px;
+            @include sm {
+                position: absolute;
+                right: 85px;
+                width: 100%;
+                max-width: 333px;
+                bottom: -170px;
+            }
             @include lg{
                 bottom: -167px;
                 right: 55px;
@@ -171,7 +174,6 @@
         }
         .sub-title{
             margin-bottom: 30px;
-            padding: 0 5px;
         }
     }
     &-items{
@@ -204,50 +206,12 @@
     }
 }
 .endless-holiday{
-    .sub-title{
-        margin-bottom: 30px;
-        @include xl{margin-bottom: 21px;}
-    }
-    &-text{
-        padding: 16px 27px 41px;
-        @include xl{
-            justify-content: center;
-            margin-top: 48px;
-            margin-bottom: 48px;
-            padding: 0 40px 0 51px;
-        }
-    }
-    .text-block{
-        padding: 0 5px;
-        @include xl{padding: 0;}
-    }
-    .img-block{
-        flex: 1;
-        margin-bottom: 50px;
-        @include sm{ margin-bottom: 278px;}
-        @include xl{margin-bottom: 335px;}
-    }
     .img-absolute{
-        display: none;
-        @include sm{
-            position: absolute;
-            top: calc(100% - 49px);
-            left: -1.313rem;
-            width: calc(100% + 2.626rem);
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+        position: relative;
+        
+        @include sm {
             z-index: -1;
-        }
-        @include xl{
-            min-width: 922px;
-            left: 0;
-            justify-content: flex-end;
-        }
-        img{
-            &:first-child{
-                padding: 74px 30px 0 0
-            }
+            margin-top: -3rem;
         }
     }
 }

@@ -4,6 +4,7 @@ let HeroSwiper = new Swiper(".HeroSwiper", {
     loop:true,
     grabCursor:'true',
     lazy: true,
+    autoHeight: true,
     navigation: {
         nextEl: '.hero-next',
         prevEl: '.hero-prev',

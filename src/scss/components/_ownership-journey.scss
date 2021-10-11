@@ -19,6 +19,8 @@
         }
         .img-block{
             margin-bottom: 20px;
+            img{max-height: 600px;}
+            
             @include sm {
                 margin-bottom: 36px;
             }
@@ -130,6 +132,7 @@
         height: 200px;
         img{
             height: 100%;
+            width: 100%;
         }
         @include sm {
             height: 555px;
@@ -175,6 +178,9 @@
 }
 
 .why-choose-us{
+    img{
+        max-height: 600px;
+    }
     .img{
         flex: 1;
         @include lg{

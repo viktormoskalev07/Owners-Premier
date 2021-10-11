@@ -134,7 +134,10 @@ img {
       font-size: 1.375rem;
     }
   }
-  &-40{font-size: 2.5rem;}
+  &-40{
+    font-size: 1.5rem;
+    @include sm {font-size: 2.5rem;}
+  }
 }
 
 .ls{

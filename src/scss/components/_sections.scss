@@ -198,6 +198,7 @@
     .img-absolute{
         position: relative;
         &>div{
+            img{width: 100%;}
             &:first-child{
                 img{max-width: 230px;}
             }

@@ -4,6 +4,12 @@
   @include xl {
     margin-top: 63px;
   }
+  a{
+    font-size: 20px;
+    @include sm{
+      font-size: 40px;
+    }
+  }
   &-top{
     padding: 30px 0;
     font-size: 20px;
@@ -19,6 +25,13 @@
     padding: 30px 0;
     @include sm {
       padding: 40px 35px 45px;
+    }
+  }
+  h3{
+    font-size: 22px;
+    @include sm {
+      font-size: 1.875rem;
+      line-height: 2.625rem;
     }
   }
 }

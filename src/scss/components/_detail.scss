@@ -65,6 +65,9 @@
             text-transform: uppercase;
             text-decoration: underline;
             margin-right: 20px;
+            @media (max-width: 576px){
+                img{width: 30px;}
+            }
         }
         .tel {
             font-size: 40px;
@@ -77,32 +80,38 @@
             }
         }
         button {
-            margin: 10px 10px 30px 10px;
-            @media (max-width: 576px) {
-                margin: 10px 10px 20px 0;
-                padding: 10px 15px;
+            margin: 10px 5px 20px 0;
+            padding: 10px;
+            font-size: 0.7rem;
+            width: 45%;
+            @include sm{
+                margin: 10px 10px 30px 10px;
+                padding: 15px;
+                
+                width: auto;
+                font-size: 1rem;
             }
-            @media (max-width: 480px) {
-                width: 100%;
+            @include md{
+                min-width: 270px;
             }
-        }
-        button:last-child {
-            @media (max-width: 576px) {
-                margin-right: 0;
-            }
-            @media (max-width: 480px) {
-                margin-top: 0;
+            @include lg{
+                min-width: 30%;
+                margin-left: 0;
             }
         }
     }
     .marker {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
         bottom: 0;
         z-index: 1;
+        @include sm{
+            width: 70px;
+            height: 70px;
+        }
         img {
             object-fit: contain;
         }
@@ -198,21 +207,29 @@
     margin-bottom: 50px;
     a {
         text-decoration: underline;
-        padding-left: 50px;
-        @media (max-width: 1450px) {
+        padding-left: 35px;
+        font-size: 0.8rem;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: left;
+        @include sm{
+            background-size: 33px;
             font-size: 1rem;
+            padding-left: 50px;
         }
     }
     a:hover {
         color: #a48242;
     }
     a:first-child {
-        margin-right: 80px;
-        background: url(../images/icons/messenger.png) no-repeat left;
-        padding-bottom: 10px;
+        background-image: url(../images/icons/messenger.png);
+        @include sm{
+            margin-right: 80px;
+            padding-bottom: 10px;
+        }
     }
     a:last-child {
-        background: url(../images/icons/envelope.png) no-repeat left;
+        background-image: url(../images/icons/envelope.png);
     }
     @media (max-width: 768px) {
         div {
@@ -622,7 +639,13 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        width: 40px;
+        height: 40px;
         z-index: 1;
+        @include sm{
+            width: 80px;
+            height: 80px;
+        }
     }
     .results_item {
         margin-bottom: 95px;
@@ -779,24 +802,19 @@
                 object-fit: cover;
             }
         }
-        .search_next {
+        .search_next, .search_prev{
             position: absolute;
             bottom: 0;
-            right: 0;
-            height: 50px;
-            width: 50px;
-            bottom: 0;
+            height: 35px;
+            width: 35px;
             cursor: pointer;
+            @include sm {
+                height: 50px;
+                width: 50px;
+            }
         }
-        .search_prev {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 50px;
-            width: 50px;
-            bottom: 0;
-            cursor: pointer;
-        }
+        .search_next { right: 0; }
+        .search_prev { left: 0; }
     }
 }
 @media (max-width: 768px) {

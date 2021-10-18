@@ -25,11 +25,6 @@ button{
       padding: 10px 0 0 10px;
       font-size: $font16;
     }
-    &>span{
-      display: block;
-      margin-left: 18px;
-      @include xl{margin-left: 10px;}
-    }
     img{
       width: 25px;
       transition: 0.3s linear;

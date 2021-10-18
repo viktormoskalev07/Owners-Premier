@@ -54,13 +54,15 @@
 }
 
 .green-block{
-    position: relative;
+    position: absolute;
     text-align: center;
-    padding: 105px 20px 53px;
-    width: 100%;
+    padding: 50px 20px 30px;
+    width: 80%;
+    max-width: 260px;
     @include sm {
-        position: absolute;
+        padding: 105px 20px 53px;
         width: 361px;
+        max-width: 100%;
         min-width: 361px;
     }
     &:after, &:before{
@@ -71,38 +73,62 @@
     }
     &:after{
         content: '';
-        width: 100px;
-        height: 51px;
+        width: 60px;
+        height: 30px;
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAzCAYAAABhaa0bAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuklEQVR4nO3Ru22UYRCG0cPKFSDqICB1Rjm0QRPugYgSaIDELRC6B5Mg5JXX6//yXWb2nyecSV7pfPj5/f4zPqoi9PsOz/iBT5PHHL0H/DrhEV/xNHfPoXvANzyf/h0KZV7/MeD04lEo4zvD4ByEQhnZKwxeg1AoI7qIwWUQCqVnb2LwNgiF0qOrGFwHoVBa9i4G74NQKC1ahMEyEAplT4sxWA5CoWxpFQbrQCiUNa3GYD0IhbKkTRhsA6FQrrUZg+0gFMqldmGwD4RCedluDPaDUCg0wqANCMdGaYZBOxCOidIUg7YgHAulOQbtQTgGShcM+oBw2yjdMOgHwm2idMWgLwi3hdIdg/4g3AbKEAzGgJAbZRgG40DIiTIUg7Eg5EIZjsF4EHKgTMFgDgixUaZhMA+EmChTMZgLQiyU6RjMByEGSggMYoAwFyUMBnFAmIMSCoNYIIxFCYdBPBDGoITEICYIfVHCYhAXhD4ooTGIDUJblPAYxAehDUoKDHKAsA8lDQZ5QNiGkgqDXCCsQ0mHQT4QlqGkxCAnCNdR0mKQF4TLKKkxyA3COUp6DLibPaBBj/iCP5JjwF87eclGZvcA/QAAAABJRU5ErkJggg==');
         background-size: 100%;
         background-repeat: no-repeat;
-        top: calc(100% - 13px);
+        top: calc(100% - 8px);
+        @include sm{
+            width: 100px;
+            height: 51px;
+            top: calc(100% - 13px);
+        }
     }
     &:before{
         content: '‘‘';
-        font-size: 120px;
+        font-size: 75px;
         line-height: 1;
-        top: 30px;
+        top: 10px;
         color: $colorBeigeDark;
         font-family: $fontHead;
+        @include sm {
+            font-size: 120px;
+            top: 30px;
+        }
     }
 
 }
 
 .journey-hero{
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     @include sm {
         margin-bottom: 315px;
     }
     @include lg {
         margin-bottom: 130px;
     }
+    &-title{
+        font-size: 25px;
+        line-height: 30px;
+        @include sm{
+            font-size: 6.875rem;
+            line-height: 5.625rem;
+        }
+    }
     &-block{
-        width: 100%;
-        padding: 20px 0;
+        min-height: 210px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        max-width: 80%;
+        padding: 25px 10px 25px 35px;
+        bottom: -70%;
         .sub-title{
             margin: 10px 0 20px;
+            font-size: 15px;
             @include sm {
+                font-size: 1.375rem;
                 margin: 17px 9px 43px;
             }
         }
@@ -120,6 +146,7 @@
             max-width: 545px;
             padding: 37px 10px 37px 37px;
             top: 337px;
+            bottom: auto;
         }
         @include lg {
             max-width: 800px;
@@ -130,6 +157,7 @@
     }
     &-img{
         height: 200px;
+        margin-bottom: 130px;
         img{
             height: 100%;
             width: 100%;
@@ -162,10 +190,12 @@
         }
     }
     .green-block{
+        position: absolute;
+        top: calc(100% - 20px);
+        left: 50%;
+        transform: translate(-50%, 0);
         @include sm {
             top: calc(100% - 66px);
-            left: 50%;
-            transform: translate(-50%, 0);
         }
         @include lg{
             left: auto;
@@ -179,7 +209,7 @@
 
 .why-choose-us{
     img{
-        max-height: 600px;
+        max-height: 700px;
     }
     .img{
         flex: 1;
@@ -189,10 +219,27 @@
     }
     .img-absolute{
         position: relative;
-        
+        margin-top: -1rem;
+        z-index: -1;
+        width: calc(100% + 2.626rem);
+        max-width: 120%;
+        margin-left: -1.313rem;
         @include sm {
-            z-index: -1;
             margin-top: -3rem;
+        }
+        @include lg{
+            max-width: 100%;
+            margin-left: 0;
+            width: 100%;
+        }
+        .w-25{
+            margin: 30px 15px 0 0;
+            @include sm{
+                margin: 70px 15px 0 0;
+            }
+            @include lg{
+                margin: 70px 25px 0 70px;
+            }
         }
     }
 }

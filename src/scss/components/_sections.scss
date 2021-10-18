@@ -3,6 +3,12 @@
     transition: .3s linear;
     svg{
         fill: $colorBeigeDark;
+        width: 20px;
+        height: 20px;
+        @include sm{
+            width: auto;
+            height: auto;
+        }
     }
     &:hover{
         color: $colorText;
@@ -22,8 +28,9 @@
     &-bottom{
         display: flex;
         flex-direction: column;
+        z-index: 1;
+        margin-top: -70px;
         @include sm{
-            z-index: 1;
             margin-top: -260px;
         }
         @include xl {
@@ -33,7 +40,7 @@
         }
     }
     &-left{
-        width: 100%;
+        width: 75%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -48,6 +55,20 @@
             left: 0;
             padding: 60px 65px 75px 38px;
             z-index: 1;
+        }
+        h1{
+            font-size: 25px;
+            line-height: 30px;
+            @include sm {
+                font-size: 2.875rem;
+                line-height: 2.875rem;
+            }
+        }
+        .sub-title{
+            font-size: 13px;
+            @include sm{
+                font-size: 1rem;
+            }
         }
     }
     &-right{
@@ -106,7 +127,7 @@
     .img{
         &-block{
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
             &>img{max-height: 400px;}
             @include sm {
                 padding:  0 32px;
@@ -120,14 +141,16 @@
             }
         }
         &-absolute{
+            position: absolute;
+            right: 20px;
             width: 100%;
+            max-width: 180px;
+            bottom: -80px;
             img{
                 max-height: 260px;
             }
             @include sm {
-                position: absolute;
                 right: 85px;
-                width: 100%;
                 max-width: 333px;
                 bottom: -170px;
             }
@@ -197,6 +220,11 @@
     }
     .img-absolute{
         position: relative;
+        z-index: -1;
+        margin-top: -1rem;
+        width: calc(100% + 2.626rem);
+        max-width: 120%;
+        margin-left: -1.313rem;
         &>div{
             img{width: 100%;}
             &:first-child{
@@ -210,10 +238,13 @@
             max-height: 260px;
             
         }
-        
         @include sm {
-            z-index: -1;
             margin-top: -3rem;
+        }
+        @include lg{
+            max-width: 100%;
+            margin-left: 0;
+            width: 100%;
         }
     }
 }

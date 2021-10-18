@@ -15,9 +15,10 @@ let HeroSwiper = new Swiper(".HeroSwiper", {
       },
   });
 let bottomSlider = new Swiper('.bottom_slider', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     autoHeight: true,
-    spaceBetween: 20,
+    spaceBetween: 15,
+    centeredSlides: true,
     loop: true,
     navigation: {
         nextEl: '.bottom-next',
@@ -59,7 +60,7 @@ let whySlider = new Swiper('.why_slider', {
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
-    spaceBetween: 50,
+    spaceBetween: 20,
     breakpoints: {
         480: {
             slidesPerView: 2,
@@ -67,6 +68,7 @@ let whySlider = new Swiper('.why_slider', {
         769: {
             slidesPerView: 2,
             centeredSlides: false,
+            spaceBetween: 50,
           },
           993: {
             slidesPerView: 3,
